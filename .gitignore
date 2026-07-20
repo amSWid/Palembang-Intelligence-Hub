@@ -1,0 +1,23 @@
+# Ignore everything
+*
+
+# Keep Git configuration files
+!.gitignore
+
+# Keep selected root files
+!README.md
+!app.py
+!config.py
+!requirements.txt
+!audit_project.py
+
+# Allow the core folder, then selected files only
+!core/
+core/*
+!core/knowledge_catalog.py
+!core/agent_selector.py
+
+# Allow the pages folder, then home.py only
+!pages/
+pages/*
+!pages/home.py
