@@ -1,24 +1,32 @@
-# Ignore everything
-*
+# Virtual environment
+.venv/
+venv/
 
-# Keep Git configuration files
-!.gitignore
+# Secrets
+.env
+.streamlit/secrets.toml
 
-# Keep selected root files
-!README.md
-!app.py
-!config.py
-!requirements.txt
-!audit_project.py
-!final_rag_audit_report.txt
+# Python cache
+__pycache__/
+*.py[cod]
 
-# Allow the core folder, then selected files only
-!core/
-core/*
-!core/knowledge_catalog.py
-!core/agent_selector.py
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
 
-# Allow the pages folder, then home.py only
-!pages/
-pages/*
-!pages/home.py
+# Logs and temporary files
+*.log
+*.tmp
+
+# Local source documents
+pdf/
+data/
+*.pdf
+
+# Local development artifacts
+.ipynb_checkpoints/
+
+# Keep deployment knowledge base
+# chroma_db/ is intentionally included for Streamlit deployment

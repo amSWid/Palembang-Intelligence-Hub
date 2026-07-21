@@ -1,0 +1,1363 @@
+{
+  "audit_time": "2026-07-16T17:21:40",
+  "project_root": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI",
+  "sections": {
+    "project_structure": [
+      {
+        "path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\app.py",
+        "exists": true
+      },
+      {
+        "path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\config.py",
+        "exists": true
+      },
+      {
+        "path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\requirements.txt",
+        "exists": true
+      },
+      {
+        "path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\.env",
+        "exists": true
+      },
+      {
+        "path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\core",
+        "exists": true
+      },
+      {
+        "path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\pages",
+        "exists": true
+      },
+      {
+        "path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\ui",
+        "exists": true
+      },
+      {
+        "path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data",
+        "exists": true
+      },
+      {
+        "path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\assets",
+        "exists": true
+      },
+      {
+        "path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\chroma_db",
+        "exists": true
+      }
+    ],
+    "python_syntax": [
+      {
+        "file": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\app.py",
+        "status": "ok"
+      },
+      {
+        "file": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\config.py",
+        "status": "ok"
+      },
+      {
+        "file": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\hero.py",
+        "status": "ok"
+      },
+      {
+        "file": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\navbar.py",
+        "status": "ok"
+      },
+      {
+        "file": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\result.py",
+        "status": "ok"
+      },
+      {
+        "file": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\search.py",
+        "status": "ok"
+      },
+      {
+        "file": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\core\\agent_selector.py",
+        "status": "ok"
+      },
+      {
+        "file": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\core\\build_chroma.py",
+        "status": "ok"
+      },
+      {
+        "file": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\core\\chroma_loader.py",
+        "status": "ok"
+      },
+      {
+        "file": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\core\\knowledge_catalog.py",
+        "status": "ok"
+      },
+      {
+        "file": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\core\\pdf_loader.py",
+        "status": "ok"
+      },
+      {
+        "file": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\core\\prompt_builder.py",
+        "status": "ok"
+      },
+      {
+        "file": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\core\\rag_agent.py",
+        "status": "ok"
+      },
+      {
+        "file": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\pages\\__init__.py",
+        "status": "ok"
+      },
+      {
+        "file": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\pages\\about.py",
+        "status": "ok"
+      },
+      {
+        "file": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\pages\\discover.py",
+        "status": "ok"
+      },
+      {
+        "file": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\pages\\ecosystem.py",
+        "status": "ok"
+      },
+      {
+        "file": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\pages\\food.py",
+        "status": "ok"
+      },
+      {
+        "file": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\pages\\home.py",
+        "status": "ok"
+      },
+      {
+        "file": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\pages\\investment.py",
+        "status": "ok"
+      },
+      {
+        "file": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\pages\\itinerary.py",
+        "status": "ok"
+      },
+      {
+        "file": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\ui\\page_ai.py",
+        "status": "ok"
+      }
+    ],
+    "pdf_sources": [
+      {
+        "source_name": "palembang_ebook",
+        "path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang01_ebook.pdf",
+        "exists": true,
+        "file_size_mb": 3.887
+      },
+      {
+        "source_name": "palembang_gdp",
+        "path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang02_gdp.pdf",
+        "exists": true,
+        "file_size_mb": 5.864
+      },
+      {
+        "source_name": "palembang_bi",
+        "path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang03_BankIndonesia.pdf",
+        "exists": true,
+        "file_size_mb": 17.91
+      },
+      {
+        "source_name": "palembang_foodarticle",
+        "path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang04_foodarticle.pdf",
+        "exists": true,
+        "file_size_mb": 2.982
+      }
+    ],
+    "pdf_loader": {
+      "status": "ok",
+      "total_pages": 565,
+      "empty_pages": 2,
+      "short_pages": 16,
+      "average_characters": 1852.43,
+      "minimum_characters": 0,
+      "maximum_characters": 8593,
+      "pages_by_source": {
+        "palembang_ebook": 21,
+        "palembang_gdp": 149,
+        "palembang_bi": 380,
+        "palembang_foodarticle": 15
+      }
+    },
+    "cleaned_text": {
+      "exists": false,
+      "path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\cleaned\\palembang_cleaned.txt"
+    },
+    "chroma": {
+      "status": "ok",
+      "collection_name": "palembang_intelligence",
+      "document_count": 1714,
+      "chunk_lengths": {
+        "average": 651.32,
+        "minimum": 99,
+        "maximum": 793
+      },
+      "chunks_by_source_id": {
+        "1": 52,
+        "2": 518,
+        "3": 1052,
+        "4": 92
+      },
+      "chunks_by_source_name": {
+        "palembang_ebook": 52,
+        "palembang_gdp": 518,
+        "palembang_bi": 1052,
+        "palembang_foodarticle": 92
+      },
+      "chunks_by_category": {
+        "history": 338,
+        "food": 199,
+        "economy": 635,
+        "culture": 64,
+        "tourism": 18,
+        "investment": 460
+      },
+      "missing_metadata": {
+        "source_id": 0,
+        "source_name": 0,
+        "page": 0,
+        "chunk_index": 0,
+        "category": 0
+      }
+    },
+    "agent_routing": [
+      {
+        "question": "What makes pempek special in Palembang?",
+        "category": "food",
+        "source_ids": [
+          4,
+          1
+        ],
+        "search_query": "what makes pempek special in palembang?"
+      },
+      {
+        "question": "What is tekwan and how is it served?",
+        "category": "food",
+        "source_ids": [
+          4,
+          1
+        ],
+        "search_query": "what is tekwan and how is it served?"
+      },
+      {
+        "question": "What makes mie celor unique in Palembang?",
+        "category": "food",
+        "source_ids": [
+          4,
+          1
+        ],
+        "search_query": "what makes mie celor unique in palembang?"
+      },
+      {
+        "question": "What is the history of Ampera Bridge?",
+        "category": "history",
+        "source_ids": [
+          1
+        ],
+        "search_query": "what is the history of ampera bridge?"
+      },
+      {
+        "question": "Why is the Musi River important to Palembang?",
+        "category": "history",
+        "source_ids": [
+          1
+        ],
+        "search_query": "why is the musi river important to palembang?"
+      },
+      {
+        "question": "Tell me about Palembang culture and music.",
+        "category": "culture",
+        "source_ids": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "search_query": "tell me about palembang culture and music."
+      },
+      {
+        "question": "What is Palembang's regional GDP?",
+        "category": "economy",
+        "source_ids": [
+          2,
+          3
+        ],
+        "search_query": "what is palembang's regional gdp?"
+      },
+      {
+        "question": "What agricultural commodities are produced in Palembang?",
+        "category": "culture",
+        "source_ids": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "search_query": "what agricultural commodities are produced in palembang?"
+      },
+      {
+        "question": "What are Palembang's investment opportunities?",
+        "category": "investment",
+        "source_ids": [
+          3,
+          2
+        ],
+        "search_query": "what are palembang's investment opportunities?"
+      },
+      {
+        "question": "What sectors have growth potential in Palembang?",
+        "category": "investment",
+        "source_ids": [
+          3,
+          2
+        ],
+        "search_query": "what sectors have growth potential in palembang?"
+      }
+    ],
+    "retrieval": [
+      {
+        "question": "What makes pempek special in Palembang?",
+        "category": "food",
+        "allowed_source_ids": [
+          4,
+          1
+        ],
+        "retrieved_count": 3,
+        "documents": [
+          {
+            "source_id": 4,
+            "page": 3,
+            "distance": 0.3288297653198242,
+            "preview": "supports its status as a symbolic element of Palembang’s identity? The primary objective of this study is to provide an in-depth exploration of the history of Pempek as a tra - ditional dish, its evolutionary journey, and its significant influence on the community, ultimately bolstering its sta- tus as a defining element of Palembang City’s identity. The study area focuses on the production and mar - keting processes of Pempek in Palembang, especially in South Sumatra. This investigation aims...",
+            "metadata": {
+              "chunk_index": 16,
+              "creationdate": "2023-11-22T10:19:54+00:00",
+              "authority": "reference_article",
+              "author": "Farida Ratu Wargadalem",
+              "crossmarkdomains[1]": "springer.com",
+              "creator": "Adobe InDesign 15.1 (Windows)",
+              "crossmarkmajorversiondate": "2010-04-23",
+              "global_chunk_index": 1654,
+              "crossmarkdomainexclusive": "true",
+              "source_key": "palembang_foodarticle",
+              "page_label": "3",
+              "source_name": "palembang_foodarticle",
+              "page": 2,
+              "producer": "Adobe PDF Library 15.0; modified using iText® 5.3.5 ©2000-2012 1T3XT BVBA (SPRINGER SBM; licensed version)",
+              "source_filename": "palembang04_foodarticle.pdf",
+              "source_title": "Palembang Culinary Article",
+              "robots": "noindex",
+              "source_type": "pdf",
+              "topics": "food,culinary,restaurant,pempek,tekwan,mie celor",
+              "source_path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang04_foodarticle.pdf",
+              "doi": "10.1186/s42779-023-00209-z",
+              "trapped": "/False",
+              "category": "food",
+              "source_id": 4,
+              "source": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang04_foodarticle.pdf",
+              "keywords": ";Ethnic food;Ethnic identity;Historical research;Indonesia",
+              "total_pages": 15,
+              "crossmarkdomains[2]": "springerlink.com",
+              "moddate": "2023-11-22T16:19:54+01:00",
+              "subject": "Journal of Ethnic Foods, https://doi.org/10.1186/s42779-023-00209-z"
+            }
+          },
+          {
+            "source_id": 4,
+            "page": 1,
+            "distance": 0.35206663608551025,
+            "preview": "spread industry. The archives from various government and private sector events showed that Pempek has become increasingly famous in Indonesia and around the world over the last 20 years. This growth can be attributed to the fact that Pempek is a significant souvenir for migrants, a symbol of Palembang City, and has a positive impact on the local economy. Therefore, future studies need to explore developments in the production of Pempek and its impact on the economy of South Sumatra. Keywords...",
+            "metadata": {
+              "creationdate": "2023-11-22T10:19:54+00:00",
+              "crossmarkdomains[2]": "springerlink.com",
+              "source_name": "palembang_foodarticle",
+              "crossmarkdomains[1]": "springer.com",
+              "producer": "Adobe PDF Library 15.0; modified using iText® 5.3.5 ©2000-2012 1T3XT BVBA (SPRINGER SBM; licensed version)",
+              "source_title": "Palembang Culinary Article",
+              "subject": "Journal of Ethnic Foods, https://doi.org/10.1186/s42779-023-00209-z",
+              "robots": "noindex",
+              "source": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang04_foodarticle.pdf",
+              "author": "Farida Ratu Wargadalem",
+              "total_pages": 15,
+              "page_label": "1",
+              "source_path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang04_foodarticle.pdf",
+              "source_filename": "palembang04_foodarticle.pdf",
+              "crossmarkdomainexclusive": "true",
+              "trapped": "/False",
+              "doi": "10.1186/s42779-023-00209-z",
+              "source_type": "pdf",
+              "chunk_index": 4,
+              "global_chunk_index": 1642,
+              "crossmarkmajorversiondate": "2010-04-23",
+              "source_key": "palembang_foodarticle",
+              "moddate": "2023-11-22T16:19:54+01:00",
+              "source_id": 4,
+              "creator": "Adobe InDesign 15.1 (Windows)",
+              "authority": "reference_article",
+              "page": 0,
+              "topics": "food,culinary,restaurant,pempek,tekwan,mie celor",
+              "category": "food",
+              "keywords": ";Ethnic food;Ethnic identity;Historical research;Indonesia"
+            }
+          },
+          {
+            "source_id": 4,
+            "page": 1,
+            "distance": 0.37442880868911743,
+            "preview": "and narration (historiography). The result showed that the production of Pempek depended on the availability of raw materials in the South Sumatra region, such as fish, sago, and brown sugar. Its history was traced back to the Srivijaya Inscription (682 AD) and the Sultanate of Palembang, a cultural hub that introduced various foods, including Pempek. The Nginum culture supported the development of Pempek distinct flavor and aroma, making it a daily staple. In the early twentieth century,...",
+            "metadata": {
+              "global_chunk_index": 1641,
+              "creationdate": "2023-11-22T10:19:54+00:00",
+              "page_label": "1",
+              "creator": "Adobe InDesign 15.1 (Windows)",
+              "crossmarkmajorversiondate": "2010-04-23",
+              "source_type": "pdf",
+              "source_id": 4,
+              "total_pages": 15,
+              "source_title": "Palembang Culinary Article",
+              "doi": "10.1186/s42779-023-00209-z",
+              "source_filename": "palembang04_foodarticle.pdf",
+              "moddate": "2023-11-22T16:19:54+01:00",
+              "authority": "reference_article",
+              "source": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang04_foodarticle.pdf",
+              "robots": "noindex",
+              "source_key": "palembang_foodarticle",
+              "crossmarkdomainexclusive": "true",
+              "crossmarkdomains[1]": "springer.com",
+              "keywords": ";Ethnic food;Ethnic identity;Historical research;Indonesia",
+              "page": 0,
+              "trapped": "/False",
+              "source_name": "palembang_foodarticle",
+              "source_path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang04_foodarticle.pdf",
+              "category": "food",
+              "producer": "Adobe PDF Library 15.0; modified using iText® 5.3.5 ©2000-2012 1T3XT BVBA (SPRINGER SBM; licensed version)",
+              "author": "Farida Ratu Wargadalem",
+              "subject": "Journal of Ethnic Foods, https://doi.org/10.1186/s42779-023-00209-z",
+              "topics": "food,culinary,restaurant,pempek,tekwan,mie celor",
+              "chunk_index": 3,
+              "crossmarkdomains[2]": "springerlink.com"
+            }
+          }
+        ]
+      },
+      {
+        "question": "What is tekwan and how is it served?",
+        "category": "food",
+        "allowed_source_ids": [
+          4,
+          1
+        ],
+        "retrieved_count": 3,
+        "documents": [
+          {
+            "source_id": 1,
+            "page": 13,
+            "distance": 0.4947664737701416,
+            "preview": "5.12 Tempoyak Tempoyak adalah fermentasi durian yang digunakan sebagai bumbu masakan. RESTORAN MAKANAN KHAS PALEMBANG (DENGAN SEJARAH & KEUNIKAN) 1. Pempek Vico Alamat: Jl. Letkol Iskandar No. 1, Ilir Timur I, Kota Palembang, Sumatera Selatan Menu Khas: Pempek kapal selam, pempek lenjer, pempek kulit, tekwan, es kacang merah Keunikan: • Salah satu pempek legendaris Palembang sejak tahun 1980-an • Menggunakan ikan segar (terutama tenggiri) • Kuah cuko khas dengan rasa seimbang asam, manis, pedas...",
+            "metadata": {
+              "creator": "Microsoft® Word for Microsoft 365",
+              "source_id": 1,
+              "topics": "general,history,culture,food,tourism,geography,attractions,shopping",
+              "page_label": "13",
+              "source_title": "Palembang Tourism, History, Culture and Culinary Ebook",
+              "source_path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang01_ebook.pdf",
+              "global_chunk_index": 30,
+              "source_key": "palembang_ebook",
+              "source": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang01_ebook.pdf",
+              "category": "food",
+              "author": "widn wid",
+              "source_filename": "palembang01_ebook.pdf",
+              "source_name": "palembang_ebook",
+              "moddate": "2026-07-02T16:52:56+07:00",
+              "total_pages": 21,
+              "producer": "Microsoft® Word for Microsoft 365",
+              "creationdate": "2026-07-02T16:52:56+07:00",
+              "chunk_index": 30,
+              "authority": "local_reference",
+              "source_type": "pdf",
+              "page": 12
+            }
+          },
+          {
+            "source_id": 4,
+            "page": 10,
+            "distance": 0.509297788143158,
+            "preview": "Page 10 of 15Wargadalem et al. Journal of Ethnic Foods (2023) 10:45 of boiling water. After the boiling process, the mixture is allowed to rest for a while, and it is then ready to be served alongside Pempek (as shown in Fig. 7). Another variation of Pempek served with a flavored broth is Tekwan and Model. Tekwan is prepared by mak- ing a soft dough shaped into small thumb-sized rounds, which are then boiled in hot water. Immediately, it starts floating on the surface, and these are lifted and...",
+            "metadata": {
+              "moddate": "2023-11-22T16:19:54+01:00",
+              "source_title": "Palembang Culinary Article",
+              "crossmarkdomains[1]": "springer.com",
+              "source_type": "pdf",
+              "authority": "reference_article",
+              "global_chunk_index": 1694,
+              "creator": "Adobe InDesign 15.1 (Windows)",
+              "page_label": "10",
+              "total_pages": 15,
+              "chunk_index": 56,
+              "trapped": "/False",
+              "keywords": ";Ethnic food;Ethnic identity;Historical research;Indonesia",
+              "crossmarkdomains[2]": "springerlink.com",
+              "creationdate": "2023-11-22T10:19:54+00:00",
+              "doi": "10.1186/s42779-023-00209-z",
+              "source_key": "palembang_foodarticle",
+              "crossmarkdomainexclusive": "true",
+              "topics": "food,culinary,restaurant,pempek,tekwan,mie celor",
+              "source_name": "palembang_foodarticle",
+              "producer": "Adobe PDF Library 15.0; modified using iText® 5.3.5 ©2000-2012 1T3XT BVBA (SPRINGER SBM; licensed version)",
+              "source_filename": "palembang04_foodarticle.pdf",
+              "source_path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang04_foodarticle.pdf",
+              "category": "food",
+              "author": "Farida Ratu Wargadalem",
+              "source": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang04_foodarticle.pdf",
+              "page": 9,
+              "source_id": 4,
+              "crossmarkmajorversiondate": "2010-04-23",
+              "robots": "noindex",
+              "subject": "Journal of Ethnic Foods, https://doi.org/10.1186/s42779-023-00209-z"
+            }
+          },
+          {
+            "source_id": 1,
+            "page": 14,
+            "distance": 0.520872950553894,
+            "preview": "Sejarah Makanan (Pempek & Tekwan): Tekwan berkembang dari pengaruh adaptasi masyarakat Palembang terhadap bahan ikan dan udang. Kata “tekwan” dipercaya berasal dari dialek lokal “bekotek man” (berkumpul sambil makan). Makanan ini awalnya hidangan rumahan keluarga nelayan di Sungai Musi. 3. Pempek Ellen Alamat: Jl. Jend. Sudirman No.2088, 20 Ilir D. III, Ilir Timur I, Kota Palembang Menu Khas: Pempek lenjer, pempek kapal selam, model, mie celor Keunikan: • Porsi besar dan rasa ikan cukup kuat •...",
+            "metadata": {
+              "total_pages": 21,
+              "author": "widn wid",
+              "source_id": 1,
+              "moddate": "2026-07-02T16:52:56+07:00",
+              "page": 13,
+              "source": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang01_ebook.pdf",
+              "source_filename": "palembang01_ebook.pdf",
+              "creationdate": "2026-07-02T16:52:56+07:00",
+              "chunk_index": 32,
+              "page_label": "14",
+              "creator": "Microsoft® Word for Microsoft 365",
+              "source_name": "palembang_ebook",
+              "category": "food",
+              "authority": "local_reference",
+              "topics": "general,history,culture,food,tourism,geography,attractions,shopping",
+              "source_path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang01_ebook.pdf",
+              "global_chunk_index": 32,
+              "source_title": "Palembang Tourism, History, Culture and Culinary Ebook",
+              "producer": "Microsoft® Word for Microsoft 365",
+              "source_key": "palembang_ebook",
+              "source_type": "pdf"
+            }
+          }
+        ]
+      },
+      {
+        "question": "What makes mie celor unique in Palembang?",
+        "category": "food",
+        "allowed_source_ids": [
+          4,
+          1
+        ],
+        "retrieved_count": 3,
+        "documents": [
+          {
+            "source_id": 4,
+            "page": 3,
+            "distance": 0.45027220249176025,
+            "preview": "supports its status as a symbolic element of Palembang’s identity? The primary objective of this study is to provide an in-depth exploration of the history of Pempek as a tra - ditional dish, its evolutionary journey, and its significant influence on the community, ultimately bolstering its sta- tus as a defining element of Palembang City’s identity. The study area focuses on the production and mar - keting processes of Pempek in Palembang, especially in South Sumatra. This investigation aims...",
+            "metadata": {
+              "source_type": "pdf",
+              "crossmarkmajorversiondate": "2010-04-23",
+              "source_id": 4,
+              "producer": "Adobe PDF Library 15.0; modified using iText® 5.3.5 ©2000-2012 1T3XT BVBA (SPRINGER SBM; licensed version)",
+              "author": "Farida Ratu Wargadalem",
+              "page_label": "3",
+              "topics": "food,culinary,restaurant,pempek,tekwan,mie celor",
+              "subject": "Journal of Ethnic Foods, https://doi.org/10.1186/s42779-023-00209-z",
+              "source": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang04_foodarticle.pdf",
+              "creationdate": "2023-11-22T10:19:54+00:00",
+              "crossmarkdomainexclusive": "true",
+              "page": 2,
+              "chunk_index": 16,
+              "trapped": "/False",
+              "moddate": "2023-11-22T16:19:54+01:00",
+              "crossmarkdomains[1]": "springer.com",
+              "robots": "noindex",
+              "source_path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang04_foodarticle.pdf",
+              "source_key": "palembang_foodarticle",
+              "doi": "10.1186/s42779-023-00209-z",
+              "source_name": "palembang_foodarticle",
+              "category": "food",
+              "keywords": ";Ethnic food;Ethnic identity;Historical research;Indonesia",
+              "crossmarkdomains[2]": "springerlink.com",
+              "global_chunk_index": 1654,
+              "source_filename": "palembang04_foodarticle.pdf",
+              "creator": "Adobe InDesign 15.1 (Windows)",
+              "authority": "reference_article",
+              "total_pages": 15,
+              "source_title": "Palembang Culinary Article"
+            }
+          },
+          {
+            "source_id": 1,
+            "page": 14,
+            "distance": 0.45459580421447754,
+            "preview": "Mie celor dipengaruhi oleh budaya Melayu pesisir dan Arab. Kata “celor” berarti “dicelup” , karena mie disajikan dengan kuah santan panas kental. Sementara model adalah adaptasi dari tekwan dengan tambahan tahu sebagai variasi isi. 4. Pempek Beringin (Rajawali) Alamat: Jl. Rajawali No.14, 9 Ilir, Ilir Timur II, Kota Palembang Menu Khas: Pempek kapal selam, pempek lenjer, pempek adaan, model Keunikan: • Salah satu brand pempek paling terkenal di Palembang • Sudah berkembang menjadi bisnis besar...",
+            "metadata": {
+              "source_id": 1,
+              "source_type": "pdf",
+              "page": 13,
+              "chunk_index": 33,
+              "source_path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang01_ebook.pdf",
+              "creator": "Microsoft® Word for Microsoft 365",
+              "source": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang01_ebook.pdf",
+              "topics": "general,history,culture,food,tourism,geography,attractions,shopping",
+              "global_chunk_index": 33,
+              "creationdate": "2026-07-02T16:52:56+07:00",
+              "moddate": "2026-07-02T16:52:56+07:00",
+              "source_name": "palembang_ebook",
+              "total_pages": 21,
+              "source_filename": "palembang01_ebook.pdf",
+              "author": "widn wid",
+              "producer": "Microsoft® Word for Microsoft 365",
+              "category": "food",
+              "source_title": "Palembang Tourism, History, Culture and Culinary Ebook",
+              "authority": "local_reference",
+              "source_key": "palembang_ebook",
+              "page_label": "14"
+            }
+          },
+          {
+            "source_id": 1,
+            "page": 11,
+            "distance": 0.46765780448913574,
+            "preview": "Tarian ini melambangkan keramahan dan penghormatan kepada tamu. 4.3 Songket Palembang Songket Palembang adalah kain tradisional yang ditenun dengan benang emas atau perak. Kain ini biasanya digunakan dalam acara adat atau pernikahan. Proses pembuatannya membutuhkan ketelitian tinggi dan waktu yang lama. Songket Palembang menjadi simbol kemewahan dan identitas budaya daerah. 4.4 Seni Ukir Palembang Seni ukir Palembang banyak ditemukan pada rumah adat, perabot, dan bangunan tradisional. Motifnya...",
+            "metadata": {
+              "source_filename": "palembang01_ebook.pdf",
+              "source_name": "palembang_ebook",
+              "source_title": "Palembang Tourism, History, Culture and Culinary Ebook",
+              "source_key": "palembang_ebook",
+              "creationdate": "2026-07-02T16:52:56+07:00",
+              "category": "culture",
+              "total_pages": 21,
+              "page_label": "11",
+              "producer": "Microsoft® Word for Microsoft 365",
+              "page": 10,
+              "chunk_index": 26,
+              "topics": "general,history,culture,food,tourism,geography,attractions,shopping",
+              "source": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang01_ebook.pdf",
+              "moddate": "2026-07-02T16:52:56+07:00",
+              "creator": "Microsoft® Word for Microsoft 365",
+              "source_id": 1,
+              "authority": "local_reference",
+              "source_path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang01_ebook.pdf",
+              "source_type": "pdf",
+              "author": "widn wid",
+              "global_chunk_index": 26
+            }
+          }
+        ]
+      },
+      {
+        "question": "What is the history of Ampera Bridge?",
+        "category": "history",
+        "allowed_source_ids": [
+          1
+        ],
+        "retrieved_count": 3,
+        "documents": [
+          {
+            "source_id": 3,
+            "page": 274,
+            "distance": 0.31181180477142334,
+            "preview": "244 Oedjan Mas di Bumi Sriwijaya Efek penyelengaraan event tersebut terwujud dalam beberapa rencana pembangunan sebelumnya. Pada 1992, dibangun Jembatan Musi II sebagai duplikasi Jembatan Ampera sekaligus pengembangan wilayah ring Soekarno-Hatta dan Keramasan (Hanafiah 1998). Untuk mengatasi kemacetan dan mempermudah hubungan Seberang Ilir dan Seberang Ulu dibangun pula Jembatan Musi III, IV, dan VI. Pembangunan jembatan penopang itu sangat efektif dalam menunjang dan mengurai kepadatan lalu...",
+            "metadata": {
+              "source_key": "palembang_bi",
+              "title": "",
+              "producer": "Adobe Acrobat Pro DC 15.23.20070",
+              "source_filename": "palembang03_BankIndonesia.pdf",
+              "creator": "Adobe Acrobat Pro DC 15.23.20070",
+              "total_pages": 380,
+              "topics": "economy,investment,inflation,growth,business,finance,market",
+              "source_title": "Bank Indonesia Economic and Investment Report",
+              "source_name": "palembang_bi",
+              "page": 273,
+              "category": "history",
+              "source_type": "pdf",
+              "creationdate": "2021-03-08T10:51:26+07:00",
+              "source": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang03_BankIndonesia.pdf",
+              "source_path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang03_BankIndonesia.pdf",
+              "global_chunk_index": 1365,
+              "page_label": "274",
+              "chunk_index": 779,
+              "source_id": 3,
+              "moddate": "2021-03-08T10:51:26+07:00",
+              "authority": "government"
+            }
+          },
+          {
+            "source_id": 3,
+            "page": 320,
+            "distance": 0.37501096725463867,
+            "preview": "290 Oedjan Mas di Bumi Sriwijaya 0 1.750 Keterangan : Jaringan Ja meter Jaringan Ja Anak Sungai Sungai Jembatan Ampera Jaringan Ja Jembatan Ampera, juga disebut Jembatan Musi, merupakan proyek mercusuar Sukarno terkait dengan program nation building.4 Jembatan itu tidak hanya menghubungkan ulu dan ilir tetapi juga menerus dan menyambung jalan yang telah dibangun pada masa penjajahan Jepang (sekarang Jalan Sudirman). Konsekuensi dari pembangunan jembatan itu, sejumlah bangunan gedung, termasuk...",
+            "metadata": {
+              "producer": "Adobe Acrobat Pro DC 15.23.20070",
+              "source_name": "palembang_bi",
+              "creator": "Adobe Acrobat Pro DC 15.23.20070",
+              "category": "history",
+              "title": "",
+              "source_filename": "palembang03_BankIndonesia.pdf",
+              "page_label": "320",
+              "global_chunk_index": 1480,
+              "source_title": "Bank Indonesia Economic and Investment Report",
+              "topics": "economy,investment,inflation,growth,business,finance,market",
+              "source": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang03_BankIndonesia.pdf",
+              "moddate": "2021-03-08T10:51:26+07:00",
+              "chunk_index": 894,
+              "page": 319,
+              "authority": "government",
+              "source_path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang03_BankIndonesia.pdf",
+              "source_type": "pdf",
+              "total_pages": 380,
+              "creationdate": "2021-03-08T10:51:26+07:00",
+              "source_id": 3,
+              "source_key": "palembang_bi"
+            }
+          },
+          {
+            "source_id": 3,
+            "page": 319,
+            "distance": 0.3818833827972412,
+            "preview": "289Bank Indonesia dan ‘Heritage’ di Sumatra Selatan jembatan yang melintasi Sungai Musi. Ide pembangunan jembatan telah muncul ketika Palembang di bawah kepemimpinan Wali Kota Le Cocg de Armadville pada masa kolonial (1924), tetapi terkendala biaya sehingga rencana itu tidak terwujud. Proses konstruksi jembatan dimulai pada akhir 1961 hingga 41 bulan kemudian. Panjang jembatan 330 meter dan lebar 22 meter; bagian tengahnya dapat diangkat atas permintaan Presiden Sukarno. Akhirnya, jembatan...",
+            "metadata": {
+              "page_label": "319",
+              "authority": "government",
+              "source_key": "palembang_bi",
+              "total_pages": 380,
+              "source": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang03_BankIndonesia.pdf",
+              "source_title": "Bank Indonesia Economic and Investment Report",
+              "creator": "Adobe Acrobat Pro DC 15.23.20070",
+              "title": "",
+              "moddate": "2021-03-08T10:51:26+07:00",
+              "source_type": "pdf",
+              "page": 318,
+              "source_path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang03_BankIndonesia.pdf",
+              "producer": "Adobe Acrobat Pro DC 15.23.20070",
+              "creationdate": "2021-03-08T10:51:26+07:00",
+              "category": "history",
+              "global_chunk_index": 1478,
+              "source_name": "palembang_bi",
+              "chunk_index": 892,
+              "topics": "economy,investment,inflation,growth,business,finance,market",
+              "source_id": 3,
+              "source_filename": "palembang03_BankIndonesia.pdf"
+            }
+          }
+        ]
+      },
+      {
+        "question": "Why is the Musi River important to Palembang?",
+        "category": "history",
+        "allowed_source_ids": [
+          1
+        ],
+        "retrieved_count": 3,
+        "documents": [
+          {
+            "source_id": 1,
+            "page": 3,
+            "distance": 0.38187503814697266,
+            "preview": "1.4 Sungai Musi Sebagai Jantung Kehidupan Kota Sungai Musi merupakan ikon utama Kota Palembang. Sungai ini membelah kota menjadi dua bagian besar, yaitu: Seberang Ilir Merupakan kawasan pusat aktivitas perdagangan dan pemerintahan. Seberang Ulu Merupakan kawasan permukiman dan aktivitas masyarakat. Sungai Musi sejak dahulu berfungsi sebagai: • Jalur perdagangan • Jalur transportasi • Jalur komunikasi • Pusat kegiatan ekonomi 1.5 Kondisi Penduduk Palembang memiliki jumlah penduduk sekitar 1,6...",
+            "metadata": {
+              "creator": "Microsoft® Word for Microsoft 365",
+              "source_path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang01_ebook.pdf",
+              "global_chunk_index": 4,
+              "topics": "general,history,culture,food,tourism,geography,attractions,shopping",
+              "authority": "local_reference",
+              "creationdate": "2026-07-02T16:52:56+07:00",
+              "source_name": "palembang_ebook",
+              "category": "economy",
+              "source": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang01_ebook.pdf",
+              "total_pages": 21,
+              "page_label": "3",
+              "chunk_index": 4,
+              "source_type": "pdf",
+              "source_id": 1,
+              "author": "widn wid",
+              "source_filename": "palembang01_ebook.pdf",
+              "moddate": "2026-07-02T16:52:56+07:00",
+              "source_key": "palembang_ebook",
+              "producer": "Microsoft® Word for Microsoft 365",
+              "source_title": "Palembang Tourism, History, Culture and Culinary Ebook",
+              "page": 2
+            }
+          },
+          {
+            "source_id": 1,
+            "page": 10,
+            "distance": 0.4097822308540344,
+            "preview": "Pengaruh ini juga tampak dalam penggunaan istilah bahasa Arab dalam kehidupan sehari-hari masyarakat. 3.5 Kehidupan Masyarakat Sungai Musi Sungai Musi menjadi pusat kehidupan masyarakat Palembang sejak dahulu. Banyak rumah tradisional dibangun menghadap sungai, bahkan sebagian berada di atas air. Transportasi air seperti perahu menjadi bagian penting dalam aktivitas sehari-hari. Meskipun kini sudah banyak jalan darat, kehidupan di sekitar sungai masih terasa kuat. Sungai Musi juga menjadi...",
+            "metadata": {
+              "total_pages": 21,
+              "topics": "general,history,culture,food,tourism,geography,attractions,shopping",
+              "page_label": "10",
+              "moddate": "2026-07-02T16:52:56+07:00",
+              "creationdate": "2026-07-02T16:52:56+07:00",
+              "global_chunk_index": 22,
+              "category": "culture",
+              "page": 9,
+              "authority": "local_reference",
+              "source_path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang01_ebook.pdf",
+              "chunk_index": 22,
+              "producer": "Microsoft® Word for Microsoft 365",
+              "source_type": "pdf",
+              "source_title": "Palembang Tourism, History, Culture and Culinary Ebook",
+              "creator": "Microsoft® Word for Microsoft 365",
+              "author": "widn wid",
+              "source": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang01_ebook.pdf",
+              "source_name": "palembang_ebook",
+              "source_id": 1,
+              "source_filename": "palembang01_ebook.pdf",
+              "source_key": "palembang_ebook"
+            }
+          },
+          {
+            "source_id": 1,
+            "page": 6,
+            "distance": 0.4304232597351074,
+            "preview": "Pedagang dari India, Arab, Persia, dan Tiongkok datang ke Palembang untuk melakukan transaksi perdagangan. 2.5 Palembang Sebagai Kota Air Topografi Palembang sangat unik. Sejak dahulu, sebagian besar wilayahnya dikelilingi oleh: • Sungai • Rawa • Genangan air Kondisi inilah yang membentuk karakter masyarakat Palembang. Air bukan dianggap sebagai penghalang, melainkan sebagai sarana kehidupan.",
+            "metadata": {
+              "source_type": "pdf",
+              "authority": "local_reference",
+              "author": "widn wid",
+              "source_path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang01_ebook.pdf",
+              "topics": "general,history,culture,food,tourism,geography,attractions,shopping",
+              "page_label": "6",
+              "producer": "Microsoft® Word for Microsoft 365",
+              "creationdate": "2026-07-02T16:52:56+07:00",
+              "source_title": "Palembang Tourism, History, Culture and Culinary Ebook",
+              "global_chunk_index": 12,
+              "source_id": 1,
+              "chunk_index": 12,
+              "creator": "Microsoft® Word for Microsoft 365",
+              "category": "food",
+              "source_name": "palembang_ebook",
+              "source_filename": "palembang01_ebook.pdf",
+              "moddate": "2026-07-02T16:52:56+07:00",
+              "total_pages": 21,
+              "page": 5,
+              "source_key": "palembang_ebook",
+              "source": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang01_ebook.pdf"
+            }
+          }
+        ]
+      },
+      {
+        "question": "Tell me about Palembang culture and music.",
+        "category": "culture",
+        "allowed_source_ids": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "retrieved_count": 3,
+        "documents": [
+          {
+            "source_id": 3,
+            "page": 57,
+            "distance": 0.3911272883415222,
+            "preview": "Mereka lebih nyaman disebut orang Palembang dibandingkan orang Melayu karena adat dan bahasanya sedikit menyimpang dari Melayu, yakni bahasa (atau baso) Melayu Palembang yang bercampur dengan kosakata Jawa. Pada masa Kesultanan, bahasa Melayu Palembang hanya digunakan sebagai bahasa pasaran, sementara bahasa Palembang alus— campuran bahasa Jawa—hidup di lingkungan istana sebagai bahasa kelas tinggi. Orang Melayu Palembang memeluk agama Islam yang sekaligus agama negara Kesultanan Palembang...",
+            "metadata": {
+              "creator": "Adobe Acrobat Pro DC 15.23.20070",
+              "producer": "Adobe Acrobat Pro DC 15.23.20070",
+              "source_title": "Bank Indonesia Economic and Investment Report",
+              "global_chunk_index": 744,
+              "source_filename": "palembang03_BankIndonesia.pdf",
+              "total_pages": 380,
+              "creationdate": "2021-03-08T10:51:26+07:00",
+              "source_path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang03_BankIndonesia.pdf",
+              "moddate": "2021-03-08T10:51:26+07:00",
+              "topics": "economy,investment,inflation,growth,business,finance,market",
+              "source_id": 3,
+              "authority": "government",
+              "source_name": "palembang_bi",
+              "source_key": "palembang_bi",
+              "page_label": "57",
+              "source_type": "pdf",
+              "source": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang03_BankIndonesia.pdf",
+              "category": "culture",
+              "chunk_index": 158,
+              "page": 56,
+              "title": ""
+            }
+          },
+          {
+            "source_id": 1,
+            "page": 9,
+            "distance": 0.4102870225906372,
+            "preview": "penting dalam kehidupan sehari-hari. 3.2 Pengaruh Melayu Budaya Melayu sangat dominan dalam kehidupan masyarakat Palembang. Bahasa, adat istiadat, dan sistem sosial banyak dipengaruhi oleh tradisi Melayu yang berkembang sejak masa Sriwijaya hingga Kesultanan Palembang Darussalam. Pengaruh ini terlihat dari penggunaan bahasa yang lembut dan penuh penghormatan. Selain itu, sistem kekerabatan juga masih sangat kuat, di mana hubungan keluarga menjadi prioritas dalam kehidupan sosial. Dalam berbagai...",
+            "metadata": {
+              "global_chunk_index": 19,
+              "page_label": "9",
+              "source_filename": "palembang01_ebook.pdf",
+              "source_id": 1,
+              "category": "culture",
+              "source": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang01_ebook.pdf",
+              "authority": "local_reference",
+              "page": 8,
+              "source_title": "Palembang Tourism, History, Culture and Culinary Ebook",
+              "chunk_index": 19,
+              "moddate": "2026-07-02T16:52:56+07:00",
+              "creationdate": "2026-07-02T16:52:56+07:00",
+              "total_pages": 21,
+              "creator": "Microsoft® Word for Microsoft 365",
+              "author": "widn wid",
+              "source_key": "palembang_ebook",
+              "source_name": "palembang_ebook",
+              "producer": "Microsoft® Word for Microsoft 365",
+              "topics": "general,history,culture,food,tourism,geography,attractions,shopping",
+              "source_type": "pdf",
+              "source_path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang01_ebook.pdf"
+            }
+          },
+          {
+            "source_id": 1,
+            "page": 11,
+            "distance": 0.4108976125717163,
+            "preview": "Tarian ini melambangkan keramahan dan penghormatan kepada tamu. 4.3 Songket Palembang Songket Palembang adalah kain tradisional yang ditenun dengan benang emas atau perak. Kain ini biasanya digunakan dalam acara adat atau pernikahan. Proses pembuatannya membutuhkan ketelitian tinggi dan waktu yang lama. Songket Palembang menjadi simbol kemewahan dan identitas budaya daerah. 4.4 Seni Ukir Palembang Seni ukir Palembang banyak ditemukan pada rumah adat, perabot, dan bangunan tradisional. Motifnya...",
+            "metadata": {
+              "chunk_index": 26,
+              "category": "culture",
+              "moddate": "2026-07-02T16:52:56+07:00",
+              "page_label": "11",
+              "total_pages": 21,
+              "source": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang01_ebook.pdf",
+              "source_name": "palembang_ebook",
+              "creator": "Microsoft® Word for Microsoft 365",
+              "topics": "general,history,culture,food,tourism,geography,attractions,shopping",
+              "source_title": "Palembang Tourism, History, Culture and Culinary Ebook",
+              "authority": "local_reference",
+              "source_path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang01_ebook.pdf",
+              "global_chunk_index": 26,
+              "source_key": "palembang_ebook",
+              "source_filename": "palembang01_ebook.pdf",
+              "author": "widn wid",
+              "source_id": 1,
+              "producer": "Microsoft® Word for Microsoft 365",
+              "page": 10,
+              "source_type": "pdf",
+              "creationdate": "2026-07-02T16:52:56+07:00"
+            }
+          }
+        ]
+      },
+      {
+        "question": "What is Palembang's regional GDP?",
+        "category": "economy",
+        "allowed_source_ids": [
+          2,
+          3
+        ],
+        "retrieved_count": 3,
+        "documents": [
+          {
+            "source_id": 3,
+            "page": 66,
+            "distance": 0.436376690864563,
+            "preview": "36 Oedjan Mas di Bumi Sriwijaya INTERAKSI ‘ULU’ DAN ‘ILIR’ Kekuasaan besar di Palembang muncul ketika Ki Gede Ing Suro mendirikan Kesultanan Palembang dengan membangun Keraton Kuto Gawang pada 1587. 11 Kesultanan Palembang mempraktikkan pola khas pemerintahan kolaborasi kekuasaan Jawa tempat asalnya dan lokal Melayu sebagai warisan Sriwijaya yang bercirikan Asia Tenggara. Pola itu antara lain terlihat dari pembagian ruang antara ilir yang berada di pesisir berbasiskan perdagangan dengan ruang...",
+            "metadata": {
+              "authority": "government",
+              "page": 65,
+              "producer": "Adobe Acrobat Pro DC 15.23.20070",
+              "total_pages": 380,
+              "page_label": "66",
+              "chunk_index": 184,
+              "source_id": 3,
+              "source_key": "palembang_bi",
+              "source_path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang03_BankIndonesia.pdf",
+              "source_type": "pdf",
+              "creator": "Adobe Acrobat Pro DC 15.23.20070",
+              "category": "history",
+              "source": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang03_BankIndonesia.pdf",
+              "global_chunk_index": 770,
+              "source_filename": "palembang03_BankIndonesia.pdf",
+              "creationdate": "2021-03-08T10:51:26+07:00",
+              "source_title": "Bank Indonesia Economic and Investment Report",
+              "title": "",
+              "topics": "economy,investment,inflation,growth,business,finance,market",
+              "moddate": "2021-03-08T10:51:26+07:00",
+              "source_name": "palembang_bi"
+            }
+          },
+          {
+            "source_id": 3,
+            "page": 69,
+            "distance": 0.44391417503356934,
+            "preview": "diri ke Palembang di bawah pimpinan Ki Gede Ing Suro dan—seperti telah disebutkan—mendirikan Kerajaan Palembang yang berpusat di Keraton Kuto Gawang. 13 Kesultanan Palembang sebagai penghasil utama lada dan sangat laris di pasaran Nusantara dalam kurun abad ke-16 hingga abad ke-18 13 Sumber Cina menyebut Palembang sebagai Ku-kang atau Kiu-kiang yang berarti ‘sungai lama’, ‘pelabuhan lama’, atau ‘terusan lama’. yang mengacu kepada sesuatu tempat yang sudah ada sebelumnya. Catatan Ma-huang...",
+            "metadata": {
+              "source_id": 3,
+              "source": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang03_BankIndonesia.pdf",
+              "source_filename": "palembang03_BankIndonesia.pdf",
+              "title": "",
+              "source_path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang03_BankIndonesia.pdf",
+              "creator": "Adobe Acrobat Pro DC 15.23.20070",
+              "producer": "Adobe Acrobat Pro DC 15.23.20070",
+              "chunk_index": 194,
+              "global_chunk_index": 780,
+              "page": 68,
+              "moddate": "2021-03-08T10:51:26+07:00",
+              "creationdate": "2021-03-08T10:51:26+07:00",
+              "category": "investment",
+              "authority": "government",
+              "source_title": "Bank Indonesia Economic and Investment Report",
+              "topics": "economy,investment,inflation,growth,business,finance,market",
+              "source_type": "pdf",
+              "source_key": "palembang_bi",
+              "page_label": "69",
+              "source_name": "palembang_bi",
+              "total_pages": 380
+            }
+          },
+          {
+            "source_id": 3,
+            "page": 18,
+            "distance": 0.4615388512611389,
+            "preview": "kolonial Hindia Belanda Guguk Sistem pemukiman di Palembang yang dibentuk berdasarkan patronase Gunpyo Uang invasi ( invansion money) yang dicetak oleh Pemerintah Jepang dan berlaku untuk daerah-daerah pendudukan Jepang. Gunsyeibu Pemerintah Balatentara Jepang tingkat Keresidenan Gunsyeireibu Markas besar angkatan darat pemerintah pendudukan Jepang. Gunseikanbu Kantor administrasi militer Jepang di Hindia Belanda Gyugun Tentara Sukarela Jepang di Sumatra Iliran Harfiah “bagian hilir sungai”...",
+            "metadata": {
+              "source_type": "pdf",
+              "creator": "Adobe Acrobat Pro DC 15.23.20070",
+              "source_title": "Bank Indonesia Economic and Investment Report",
+              "producer": "Adobe Acrobat Pro DC 15.23.20070",
+              "title": "",
+              "topics": "economy,investment,inflation,growth,business,finance,market",
+              "global_chunk_index": 625,
+              "creationdate": "2021-03-08T10:51:26+07:00",
+              "page": 17,
+              "chunk_index": 39,
+              "moddate": "2021-03-08T10:51:26+07:00",
+              "authority": "government",
+              "source_path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang03_BankIndonesia.pdf",
+              "source_filename": "palembang03_BankIndonesia.pdf",
+              "source": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang03_BankIndonesia.pdf",
+              "total_pages": 380,
+              "source_key": "palembang_bi",
+              "source_name": "palembang_bi",
+              "category": "investment",
+              "source_id": 3,
+              "page_label": "18"
+            }
+          }
+        ]
+      },
+      {
+        "question": "What agricultural commodities are produced in Palembang?",
+        "category": "culture",
+        "allowed_source_ids": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "retrieved_count": 3,
+        "documents": [
+          {
+            "source_id": 3,
+            "page": 99,
+            "distance": 0.32795554399490356,
+            "preview": "langsung perkembangan dan perniagaan di kota tersebut. Berbagai aktivitas pengumpulan atau pengiriman hasil perkebunan seperti karet, sawit, kopi, teh hingga beras, serta hasil tambang semisal minyak bumi, batu bara hingga timah membenarkan laporan-laporan Belanda yang dibacanya bahwa di Bumi Sriwijaya itu oedjan mas mengguyur deras. Barang-barang hasil bumi yang terkumpul di kota membentuk jaringan perdagangan luar biasa, menyebabkan Palembang tumbuh sebagai kota produksi yang mampu...",
+            "metadata": {
+              "topics": "economy,investment,inflation,growth,business,finance,market",
+              "category": "economy",
+              "chunk_index": 262,
+              "total_pages": 380,
+              "source_filename": "palembang03_BankIndonesia.pdf",
+              "producer": "Adobe Acrobat Pro DC 15.23.20070",
+              "moddate": "2021-03-08T10:51:26+07:00",
+              "source_path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang03_BankIndonesia.pdf",
+              "source_key": "palembang_bi",
+              "source_id": 3,
+              "creationdate": "2021-03-08T10:51:26+07:00",
+              "title": "",
+              "source_name": "palembang_bi",
+              "authority": "government",
+              "source_title": "Bank Indonesia Economic and Investment Report",
+              "source": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang03_BankIndonesia.pdf",
+              "creator": "Adobe Acrobat Pro DC 15.23.20070",
+              "page": 98,
+              "page_label": "99",
+              "global_chunk_index": 848,
+              "source_type": "pdf"
+            }
+          },
+          {
+            "source_id": 2,
+            "page": 47,
+            "distance": 0.33818304538726807,
+            "preview": "Ruang Lingkup Dan Metode Penghitungan Produk Domestik Regional Bruto Kota Palembang Menurut Lapangan Usaha 2020-2024 31 Produk khas yang dihasilkan: ko- kas, butane, propane, petrol, gas hidrokarbon dan metan, gasoline, minyak tanah, gas etane, pro- pane dan butane sebagai produk pe-nyulingan minyak. Termasuk disini adalah pengoperasian tungku batubara, produksi batu- bara dan semi batubara, gas ba- tubara, ter, lignit dan kokas. KBLI 2009: kode 19. 2.3.2 Industri Makanan dan Mi- numan Industri...",
+            "metadata": {
+              "source_path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang02_gdp.pdf",
+              "chunk_index": 134,
+              "source_title": "Palembang GDP and Regional Economic Report",
+              "authority": "government",
+              "producer": "PyPDF",
+              "source_filename": "palembang02_gdp.pdf",
+              "global_chunk_index": 193,
+              "creationdate": "2025-03-24T03:33:09+07:00",
+              "source_name": "palembang_gdp",
+              "source_key": "palembang_gdp",
+              "moddate": "2025-03-27T13:55:49+07:00",
+              "topics": "economy,gdp,grdp,agriculture,production,income,employment,trade",
+              "page_label": "47",
+              "source_id": 2,
+              "source_type": "pdf",
+              "total_pages": 149,
+              "creator": "Nitro Pro 13 (13.70.0.30)",
+              "category": "food",
+              "page": 46,
+              "source": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang02_gdp.pdf"
+            }
+          },
+          {
+            "source_id": 2,
+            "page": 32,
+            "distance": 0.3420635461807251,
+            "preview": "2.1.1.1 Tanaman Pangan Meliputi semua kegiatan ekonomi yang menghasilkan komoditas bahan pangan. Komo- ditas yang dihasilkan oleh kegiat - an tanaman pangan meliputi pa - di, palawija (jagung, kedele, ka - cang tanah, kacang hijau, ubi ja - lar, ubi kayu, palawija lainnya, se- perti talas, ganyong, irut, gembili, dll), serta tanaman serelia lainnya (sorgum/cantel, jawawut, jelai, gandum, dll). Keseluruhan komo - ditas di atas masuk ke dalam go - longan tanaman semusim, de - ngan wujud produksi...",
+            "metadata": {
+              "topics": "economy,gdp,grdp,agriculture,production,income,employment,trade",
+              "source_path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang02_gdp.pdf",
+              "source_type": "pdf",
+              "source_title": "Palembang GDP and Regional Economic Report",
+              "producer": "PyPDF",
+              "source_filename": "palembang02_gdp.pdf",
+              "creationdate": "2025-03-24T03:33:09+07:00",
+              "source_id": 2,
+              "chunk_index": 74,
+              "moddate": "2025-03-27T13:55:49+07:00",
+              "authority": "government",
+              "source": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang02_gdp.pdf",
+              "source_name": "palembang_gdp",
+              "creator": "Nitro Pro 13 (13.70.0.30)",
+              "category": "economy",
+              "total_pages": 149,
+              "source_key": "palembang_gdp",
+              "page": 31,
+              "page_label": "32",
+              "global_chunk_index": 133
+            }
+          }
+        ]
+      },
+      {
+        "question": "What are Palembang's investment opportunities?",
+        "category": "investment",
+        "allowed_source_ids": [
+          3,
+          2
+        ],
+        "retrieved_count": 3,
+        "documents": [
+          {
+            "source_id": 3,
+            "page": 1,
+            "distance": 0.4095876216888428,
+            "preview": "Palembang telah mengukuhkan pentingnya peran lembaga perbankan ini terhadap perolehan kesempatan atas pembukaan akses kredit dan permodalan dalam mengembangkan usaha dan ekspansi bisnis di Sumatra Selatan pada era kolonial. Di era seperti sekarang ini, lembaga perbankan masih tetap memainkan peran penting dalam memfasilitasi perekonomian di Palembang serta wilayah Sumatra Selatan lainnya. Lembaga perbankan yang hingga kini memiliki andil besar dalam perkembangan tersebut salah satunya ialah...",
+            "metadata": {
+              "source": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang03_BankIndonesia.pdf",
+              "creator": "Adobe Acrobat Pro DC 15.23.20070",
+              "category": "investment",
+              "source_filename": "palembang03_BankIndonesia.pdf",
+              "source_name": "palembang_bi",
+              "source_type": "pdf",
+              "topics": "economy,investment,inflation,growth,business,finance,market",
+              "producer": "Adobe Acrobat Pro DC 15.23.20070",
+              "source_title": "Bank Indonesia Economic and Investment Report",
+              "total_pages": 380,
+              "source_key": "palembang_bi",
+              "title": "",
+              "page_label": "1",
+              "authority": "government",
+              "source_id": 3,
+              "creationdate": "2021-03-08T10:51:26+07:00",
+              "source_path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang03_BankIndonesia.pdf",
+              "chunk_index": 3,
+              "global_chunk_index": 588,
+              "page": 0,
+              "moddate": "2021-03-08T10:51:26+07:00"
+            }
+          },
+          {
+            "source_id": 3,
+            "page": 380,
+            "distance": 0.4095876216888428,
+            "preview": "Palembang telah mengukuhkan pentingnya peran lembaga perbankan ini terhadap perolehan kesempatan atas pembukaan akses kredit dan permodalan dalam mengembangkan usaha dan ekspansi bisnis di Sumatra Selatan pada era kolonial. Di era seperti sekarang ini, lembaga perbankan masih tetap memainkan peran penting dalam memfasilitasi perekonomian di Palembang serta wilayah Sumatra Selatan lainnya. Lembaga perbankan yang hingga kini memiliki andil besar dalam perkembangan tersebut salah satunya ialah...",
+            "metadata": {
+              "producer": "Adobe Acrobat Pro DC 15.23.20070",
+              "category": "investment",
+              "source": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang03_BankIndonesia.pdf",
+              "title": "",
+              "page_label": "380",
+              "chunk_index": 1048,
+              "moddate": "2021-03-08T10:51:26+07:00",
+              "source_filename": "palembang03_BankIndonesia.pdf",
+              "source_key": "palembang_bi",
+              "topics": "economy,investment,inflation,growth,business,finance,market",
+              "total_pages": 380,
+              "source_id": 3,
+              "source_title": "Bank Indonesia Economic and Investment Report",
+              "authority": "government",
+              "global_chunk_index": 1634,
+              "source_name": "palembang_bi",
+              "source_type": "pdf",
+              "creator": "Adobe Acrobat Pro DC 15.23.20070",
+              "source_path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang03_BankIndonesia.pdf",
+              "page": 379,
+              "creationdate": "2021-03-08T10:51:26+07:00"
+            }
+          },
+          {
+            "source_id": 3,
+            "page": 260,
+            "distance": 0.4178735613822937,
+            "preview": "230 Oedjan Mas di Bumi Sriwijaya Gambar 6.2 Roda pembangunan ekonomi Palembang 1970-an (Sumber: Nawawi 1971) Dalam menopang pertumbuhan ekonomi dilakukan berbagai proyek pembangunan dalam memajukan perkembangan ekonomi sejak era 1970 hingga 1990-an. Sementara, Palembang sebagai kota yang berada di ilir dikembangkan sebagai pusat pemerintahan dan perdagangan, kota industri dan pusat pendidikan serta kebudayaan sejak masa Orde Baru. Pelabuhan Boom Baru Palembang didorong sebagai pusat kegiatan...",
+            "metadata": {
+              "source_filename": "palembang03_BankIndonesia.pdf",
+              "chunk_index": 739,
+              "topics": "economy,investment,inflation,growth,business,finance,market",
+              "source_title": "Bank Indonesia Economic and Investment Report",
+              "moddate": "2021-03-08T10:51:26+07:00",
+              "total_pages": 380,
+              "producer": "Adobe Acrobat Pro DC 15.23.20070",
+              "category": "investment",
+              "authority": "government",
+              "creationdate": "2021-03-08T10:51:26+07:00",
+              "global_chunk_index": 1325,
+              "page": 259,
+              "page_label": "260",
+              "source_key": "palembang_bi",
+              "source": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang03_BankIndonesia.pdf",
+              "source_path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang03_BankIndonesia.pdf",
+              "creator": "Adobe Acrobat Pro DC 15.23.20070",
+              "source_id": 3,
+              "title": "",
+              "source_name": "palembang_bi",
+              "source_type": "pdf"
+            }
+          }
+        ]
+      },
+      {
+        "question": "What sectors have growth potential in Palembang?",
+        "category": "investment",
+        "allowed_source_ids": [
+          3,
+          2
+        ],
+        "retrieved_count": 3,
+        "documents": [
+          {
+            "source_id": 2,
+            "page": 115,
+            "distance": 0.2738147974014282,
+            "preview": "tahun 2024. Hal ini menunjukkan selama tahun 2024 Kota Palembang mengalami pertumbuhan sebesar 5,13 persen. Pertumbuhan ini murni disebabkan oleh meningkatnya produksi di beberapa lapangan usaha , tanpa dipengaruhi inflasi. 3.1 Struktur Ekonomi Besarnya peranan berbagai lapangan usaha ekonomi dalam memproduksi barang dan jasa sangat menentukan struktur ekonomi suatu daerah. Struktur ekonomi yang terbentuk dari nilai tambah yang diciptakan oleh setiap lapangan usaha menggambarkan seberapa besar...",
+            "metadata": {
+              "creator": "Nitro Pro 13 (13.70.0.30)",
+              "source_key": "palembang_gdp",
+              "chunk_index": 406,
+              "source_type": "pdf",
+              "page": 114,
+              "topics": "economy,gdp,grdp,agriculture,production,income,employment,trade",
+              "source_filename": "palembang02_gdp.pdf",
+              "source_id": 2,
+              "global_chunk_index": 467,
+              "total_pages": 149,
+              "moddate": "2025-03-27T13:55:49+07:00",
+              "source": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang02_gdp.pdf",
+              "page_label": "115",
+              "authority": "government",
+              "source_name": "palembang_gdp",
+              "source_path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang02_gdp.pdf",
+              "source_title": "Palembang GDP and Regional Economic Report",
+              "creationdate": "2025-03-24T03:33:09+07:00",
+              "category": "economy",
+              "producer": "PyPDF"
+            }
+          },
+          {
+            "source_id": 2,
+            "page": 125,
+            "distance": 0.27879464626312256,
+            "preview": "Produk Domestik Regional Bruto Kota Palembang Menurut Lapangan Usaha 2020-2024 109 Pertumbuhan Dan Peranan PDRB Kota Palembang Menurut Lapangan Usaha BAB IV PERTUMBUHAN DAN PERANAN PDRB KOTA PALEMBANG MENURUT LAPANGAN USAHA Produk Domestik Regional Bruto menurut lapangan usaha dirinci menjadi 17 kategori. Sebagian besar kategori dirinci lagi menjadi subkategori, disesuaikan dengan Klasifikasi Baku Lapangan Usaha Indonesia (KBLI) 2009. Berikut uraian perkembangan di setiap lapangan usaha periode...",
+            "metadata": {
+              "topics": "economy,gdp,grdp,agriculture,production,income,employment,trade",
+              "authority": "government",
+              "source_id": 2,
+              "category": "economy",
+              "moddate": "2025-03-27T13:55:49+07:00",
+              "source": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang02_gdp.pdf",
+              "page": 124,
+              "page_label": "125",
+              "chunk_index": 438,
+              "creationdate": "2025-03-24T03:33:09+07:00",
+              "total_pages": 149,
+              "source_path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang02_gdp.pdf",
+              "source_title": "Palembang GDP and Regional Economic Report",
+              "source_key": "palembang_gdp",
+              "producer": "PyPDF",
+              "source_name": "palembang_gdp",
+              "source_filename": "palembang02_gdp.pdf",
+              "creator": "Nitro Pro 13 (13.70.0.30)",
+              "global_chunk_index": 501,
+              "source_type": "pdf"
+            }
+          },
+          {
+            "source_id": 2,
+            "page": 134,
+            "distance": 0.29866260290145874,
+            "preview": "role of this category is very vital and is an indicator of a nation's progress, especially telecommunications services. The role of this category in the economy in Palemban g City during 2020-2024 is relatively stable. This category shows a stable role in the range of 7 percent and above. Meanwhile, the growth rate shows fluctuating movements, namely 9.92 percent in 20 20, then slowing down to 6.33 percent in 2021 and accelerating again in 2022, namely 6.38 percent. In 2024 it will accelerate...",
+            "metadata": {
+              "authority": "government",
+              "source": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang02_gdp.pdf",
+              "source_title": "Palembang GDP and Regional Economic Report",
+              "producer": "PyPDF",
+              "source_id": 2,
+              "total_pages": 149,
+              "source_key": "palembang_gdp",
+              "topics": "economy,gdp,grdp,agriculture,production,income,employment,trade",
+              "chunk_index": 474,
+              "creationdate": "2025-03-24T03:33:09+07:00",
+              "global_chunk_index": 537,
+              "source_filename": "palembang02_gdp.pdf",
+              "source_path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang02_gdp.pdf",
+              "source_type": "pdf",
+              "page": 133,
+              "creator": "Nitro Pro 13 (13.70.0.30)",
+              "page_label": "134",
+              "category": "investment",
+              "source_name": "palembang_gdp",
+              "moddate": "2025-03-27T13:55:49+07:00"
+            }
+          }
+        ]
+      }
+    ],
+    "source_mapping": [
+      {
+        "source_id": 1,
+        "pdf_key": "palembang_ebook",
+        "path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang01_ebook.pdf",
+        "exists": true
+      },
+      {
+        "source_id": 2,
+        "pdf_key": "palembang_gdp",
+        "path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang02_gdp.pdf",
+        "exists": true
+      },
+      {
+        "source_id": 3,
+        "pdf_key": "palembang_bi",
+        "path": "C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang03_BankIndonesia.pdf",
+        "exists": true
+      }
+    ],
+    "recommendations": [
+      "The current PDF and Chroma foundation looks ready for additional sources.",
+      "Add new PDFs one at a time, rebuild Chroma, and run this audit again.",
+      "Add Tavily only after the local knowledge audit remains stable."
+    ]
+  }
+}

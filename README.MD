@@ -40,6 +40,30 @@ The application combines local knowledge sources with Retrieval-Augmented Genera
 
 ---
 
+## Quality Assurance
+
+This project includes an automated RAG audit before release.
+
+The audit verifies:
+
+- Python syntax
+- Environment configuration
+- Knowledge catalog integrity
+- Chroma vector database
+- Agent routing
+- Semantic retrieval
+- End-to-end RAG response
+
+Latest audit:
+
+✅ 8/8 sections passed
+
+See:
+
+final_rag_audit_report.txt
+
+---
+
 ## Project Status
 
 This project is currently under active development as part of my DTS DATA portfolio.

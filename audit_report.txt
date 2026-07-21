@@ -1,0 +1,294 @@
+PALEMBANG INTELLIGENCE HUB
+LOCAL KNOWLEDGE AND RAG AUDIT
+Audit time: 2026-07-16T17:21:40
+
+========================================================================
+1. PROJECT STRUCTURE AUDIT
+========================================================================
+[OK     ] app.py
+[OK     ] config.py
+[OK     ] requirements.txt
+[OK     ] .env
+[OK     ] core
+[OK     ] pages
+[OK     ] ui
+[OK     ] data
+[OK     ] assets
+[OK     ] chroma_db
+
+========================================================================
+2. PYTHON SYNTAX AUDIT
+========================================================================
+[OK     ] app.py
+[OK     ] config.py
+[OK     ] hero.py
+[OK     ] navbar.py
+[OK     ] result.py
+[OK     ] search.py
+[OK     ] core\agent_selector.py
+[OK     ] core\build_chroma.py
+[OK     ] core\chroma_loader.py
+[OK     ] core\knowledge_catalog.py
+[OK     ] core\pdf_loader.py
+[OK     ] core\prompt_builder.py
+[OK     ] core\rag_agent.py
+[OK     ] pages\__init__.py
+[OK     ] pages\about.py
+[OK     ] pages\discover.py
+[OK     ] pages\ecosystem.py
+[OK     ] pages\food.py
+[OK     ] pages\home.py
+[OK     ] pages\investment.py
+[OK     ] pages\itinerary.py
+[OK     ] ui\page_ai.py
+
+========================================================================
+3. PDF SOURCE AUDIT
+========================================================================
+[OK     ] palembang_ebook
+          File : palembang01_ebook.pdf
+          Size : 3.89 MB
+[OK     ] palembang_gdp
+          File : palembang02_gdp.pdf
+          Size : 5.86 MB
+[OK     ] palembang_bi
+          File : palembang03_BankIndonesia.pdf
+          Size : 17.91 MB
+[OK     ] palembang_foodarticle
+          File : palembang04_foodarticle.pdf
+          Size : 2.98 MB
+
+========================================================================
+4. PDF LOADER AUDIT
+========================================================================
+Total PDF pages loaded : 565
+Empty pages            : 2
+Very short pages       : 16
+Average characters     : 1852.4
+Minimum characters     : 0
+Maximum characters     : 8593
+
+Pages by source:
+  - palembang_bi: 380
+  - palembang_ebook: 21
+  - palembang_foodarticle: 15
+  - palembang_gdp: 149
+
+First extracted page preview:
+INFORMASI UNIK KOTA PALEMBANG Budaya, Sejarah, Makanan, Bahasa Gaul, 50 Hal Aneh, 8 Hal Menarik, Tempat Wisata, dan Data Resmi Kota Palembang INFORMASI UNIK KOTA PALEMBANG Budaya, Sejarah, Makanan, Bahasa, Wisata, dan Berbagai Keunikan Kota Tertua di Indonesia Disusun sebagai dokumen pengetahuan dan pembelajaran budaya Indonesia. Kota Palembang merupakan salah satu kota tertua di Indonesia yang memiliki sejarah panjang, budaya yang kaya, dan identitas yang sangat kuat. Kota ini tidak hanya...
+Metadata: {'producer': 'Microsoft® Word for Microsoft 365', 'creator': 'Microsoft® Word for Microsoft 365', 'creationdate': '2026-07-02T16:52:56+07:00', 'author': 'widn wid', 'moddate': '2026-07-02T16:52:56+07:00', 'source': 'C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang01_ebook.pdf', 'total_pages': 21, 'page': 0, 'page_label': '1', 'source_id': 1, 'source_key': 'palembang_ebook', 'source_name': 'palembang_ebook', 'source_title': 'Palembang Tourism, History, Culture and Culinary Ebook', 'source_type': 'pdf', 'source_filename': 'palembang01_ebook.pdf', 'source_path': 'C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang01_ebook.pdf', 'authority': 'local_reference', 'topics': 'general,history,culture,food,tourism,geography,attractions,shopping'}
+
+========================================================================
+5. CLEANED TEXT AUDIT
+========================================================================
+[WARNING] Cleaned text file does not exist.
+Expected path: C:\Users\SWIDJAJA\Desktop\Belajar DATA\sources from DTSENSE\7_Generative AI\FP_Agentic\DTS_PalembangAI\data\cleaned\palembang_cleaned.txt
+
+========================================================================
+6. CHROMA DATABASE AUDIT
+========================================================================
+Collection name : palembang_intelligence
+Document count  : 1714
+Database path   : C:\Users\SWIDJAJA\Desktop\Belajar DATA\sources from DTSENSE\7_Generative AI\FP_Agentic\DTS_PalembangAI\chroma_db
+Embedding model : sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+
+Chunk length statistics:
+  Average : 651.3
+  Minimum : 99
+  Maximum : 793
+
+Chunks by source_id:
+  - Source 1: 52
+  - Source 2: 518
+  - Source 3: 1052
+  - Source 4: 92
+
+Chunks by source_name:
+  - palembang_bi: 1052
+  - palembang_ebook: 52
+  - palembang_foodarticle: 92
+  - palembang_gdp: 518
+
+Metadata completeness:
+  Missing source_id   : 0
+  Missing source_name : 0
+  Missing page        : 0
+  Missing chunk_index : 0
+  Missing category    : 0
+
+Chunks by category:
+  - culture: 64
+  - economy: 635
+  - food: 199
+  - history: 338
+  - investment: 460
+  - tourism: 18
+
+First Chroma chunk preview:
+INFORMASI UNIK KOTA PALEMBANG Budaya, Sejarah, Makanan, Bahasa Gaul, 50 Hal Aneh, 8 Hal Menarik, Tempat Wisata, dan Data Resmi Kota Palembang INFORMASI UNIK KOTA PALEMBANG Budaya, Sejarah, Makanan, Bahasa, Wisata, dan Berbagai Keunikan Kota Tertua di Indonesia Disusun sebagai dokumen pengetahuan dan pembelajaran budaya Indonesia. Kota Palembang merupakan salah satu kota tertua di Indonesia yang memiliki sejarah panjang, budaya yang kaya, dan identitas yang sangat kuat. Kota ini tidak hanya...
+Metadata: {'creator': 'Microsoft® Word for Microsoft 365', 'source_name': 'palembang_ebook', 'topics': 'general,history,culture,food,tourism,geography,attractions,shopping', 'page': 0, 'category': 'history', 'author': 'widn wid', 'source': 'C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang01_ebook.pdf', 'authority': 'local_reference', 'total_pages': 21, 'global_chunk_index': 0, 'source_key': 'palembang_ebook', 'page_label': '1', 'source_type': 'pdf', 'source_id': 1, 'source_filename': 'palembang01_ebook.pdf', 'moddate': '2026-07-02T16:52:56+07:00', 'source_path': 'C:\\Users\\SWIDJAJA\\Desktop\\Belajar DATA\\sources from DTSENSE\\7_Generative AI\\FP_Agentic\\DTS_PalembangAI\\data\\raw_pdf\\palembang01_ebook.pdf', 'producer': 'Microsoft® Word for Microsoft 365', 'source_title': 'Palembang Tourism, History, Culture and Culinary Ebook', 'chunk_index': 0, 'creationdate': '2026-07-02T16:52:56+07:00'}
+
+========================================================================
+7. AGENT ROUTING AUDIT
+========================================================================
+Question : What makes pempek special in Palembang?
+Category : food
+Sources  : (4, 1)
+------------------------------------------------------------------------
+Question : What is tekwan and how is it served?
+Category : food
+Sources  : (4, 1)
+------------------------------------------------------------------------
+Question : What makes mie celor unique in Palembang?
+Category : food
+Sources  : (4, 1)
+------------------------------------------------------------------------
+Question : What is the history of Ampera Bridge?
+Category : history
+Sources  : (1,)
+------------------------------------------------------------------------
+Question : Why is the Musi River important to Palembang?
+Category : history
+Sources  : (1,)
+------------------------------------------------------------------------
+Question : Tell me about Palembang culture and music.
+Category : culture
+Sources  : (1, 2, 3, 4)
+------------------------------------------------------------------------
+Question : What is Palembang's regional GDP?
+Category : economy
+Sources  : (2, 3)
+------------------------------------------------------------------------
+Question : What agricultural commodities are produced in Palembang?
+Category : culture
+Sources  : (1, 2, 3, 4)
+------------------------------------------------------------------------
+Question : What are Palembang's investment opportunities?
+Category : investment
+Sources  : (3, 2)
+------------------------------------------------------------------------
+Question : What sectors have growth potential in Palembang?
+Category : investment
+Sources  : (3, 2)
+------------------------------------------------------------------------
+
+========================================================================
+8. CHROMA RETRIEVAL AUDIT
+========================================================================
+Question  : What makes pempek special in Palembang?
+Category  : food
+Retrieved : 3
+  Result 1: source=4, page=3, distance=0.3288297653198242
+    supports its status as a symbolic element of Palembang’s identity? The primary objective of this study is to provide an in-depth exploration of the history of Pempek as a tra - ditional dish, its evolutionary journey, and its significant...
+  Result 2: source=4, page=1, distance=0.35206663608551025
+    spread industry. The archives from various government and private sector events showed that Pempek has become increasingly famous in Indonesia and around the world over the last 20 years. This growth can be attributed to the fact that...
+  Result 3: source=4, page=1, distance=0.37442880868911743
+    and narration (historiography). The result showed that the production of Pempek depended on the availability of raw materials in the South Sumatra region, such as fish, sago, and brown sugar. Its history was traced back to the Srivijaya...
+------------------------------------------------------------------------
+Question  : What is tekwan and how is it served?
+Category  : food
+Retrieved : 3
+  Result 1: source=1, page=13, distance=0.4947664737701416
+    5.12 Tempoyak Tempoyak adalah fermentasi durian yang digunakan sebagai bumbu masakan. RESTORAN MAKANAN KHAS PALEMBANG (DENGAN SEJARAH & KEUNIKAN) 1. Pempek Vico Alamat: Jl. Letkol Iskandar No. 1, Ilir Timur I, Kota Palembang, Sumatera...
+  Result 2: source=4, page=10, distance=0.509297788143158
+    Page 10 of 15Wargadalem et al. Journal of Ethnic Foods (2023) 10:45 of boiling water. After the boiling process, the mixture is allowed to rest for a while, and it is then ready to be served alongside Pempek (as shown in Fig. 7). Another...
+  Result 3: source=1, page=14, distance=0.520872950553894
+    Sejarah Makanan (Pempek & Tekwan): Tekwan berkembang dari pengaruh adaptasi masyarakat Palembang terhadap bahan ikan dan udang. Kata “tekwan” dipercaya berasal dari dialek lokal “bekotek man” (berkumpul sambil makan). Makanan ini awalnya...
+------------------------------------------------------------------------
+Question  : What makes mie celor unique in Palembang?
+Category  : food
+Retrieved : 3
+  Result 1: source=4, page=3, distance=0.45027220249176025
+    supports its status as a symbolic element of Palembang’s identity? The primary objective of this study is to provide an in-depth exploration of the history of Pempek as a tra - ditional dish, its evolutionary journey, and its significant...
+  Result 2: source=1, page=14, distance=0.45459580421447754
+    Mie celor dipengaruhi oleh budaya Melayu pesisir dan Arab. Kata “celor” berarti “dicelup” , karena mie disajikan dengan kuah santan panas kental. Sementara model adalah adaptasi dari tekwan dengan tambahan tahu sebagai variasi isi. 4....
+  Result 3: source=1, page=11, distance=0.46765780448913574
+    Tarian ini melambangkan keramahan dan penghormatan kepada tamu. 4.3 Songket Palembang Songket Palembang adalah kain tradisional yang ditenun dengan benang emas atau perak. Kain ini biasanya digunakan dalam acara adat atau pernikahan....
+------------------------------------------------------------------------
+Question  : What is the history of Ampera Bridge?
+Category  : history
+Retrieved : 3
+  Result 1: source=3, page=274, distance=0.31181180477142334
+    244 Oedjan Mas di Bumi Sriwijaya Efek penyelengaraan event tersebut terwujud dalam beberapa rencana pembangunan sebelumnya. Pada 1992, dibangun Jembatan Musi II sebagai duplikasi Jembatan Ampera sekaligus pengembangan wilayah ring...
+  Result 2: source=3, page=320, distance=0.37501096725463867
+    290 Oedjan Mas di Bumi Sriwijaya 0 1.750 Keterangan : Jaringan Ja meter Jaringan Ja Anak Sungai Sungai Jembatan Ampera Jaringan Ja Jembatan Ampera, juga disebut Jembatan Musi, merupakan proyek mercusuar Sukarno terkait dengan program...
+  Result 3: source=3, page=319, distance=0.3818833827972412
+    289Bank Indonesia dan ‘Heritage’ di Sumatra Selatan jembatan yang melintasi Sungai Musi. Ide pembangunan jembatan telah muncul ketika Palembang di bawah kepemimpinan Wali Kota Le Cocg de Armadville pada masa kolonial (1924), tetapi...
+------------------------------------------------------------------------
+Question  : Why is the Musi River important to Palembang?
+Category  : history
+Retrieved : 3
+  Result 1: source=1, page=3, distance=0.38187503814697266
+    1.4 Sungai Musi Sebagai Jantung Kehidupan Kota Sungai Musi merupakan ikon utama Kota Palembang. Sungai ini membelah kota menjadi dua bagian besar, yaitu: Seberang Ilir Merupakan kawasan pusat aktivitas perdagangan dan pemerintahan....
+  Result 2: source=1, page=10, distance=0.4097822308540344
+    Pengaruh ini juga tampak dalam penggunaan istilah bahasa Arab dalam kehidupan sehari-hari masyarakat. 3.5 Kehidupan Masyarakat Sungai Musi Sungai Musi menjadi pusat kehidupan masyarakat Palembang sejak dahulu. Banyak rumah tradisional...
+  Result 3: source=1, page=6, distance=0.4304232597351074
+    Pedagang dari India, Arab, Persia, dan Tiongkok datang ke Palembang untuk melakukan transaksi perdagangan. 2.5 Palembang Sebagai Kota Air Topografi Palembang sangat unik. Sejak dahulu, sebagian besar wilayahnya dikelilingi oleh: • Sungai •...
+------------------------------------------------------------------------
+Question  : Tell me about Palembang culture and music.
+Category  : culture
+Retrieved : 3
+  Result 1: source=3, page=57, distance=0.3911272883415222
+    Mereka lebih nyaman disebut orang Palembang dibandingkan orang Melayu karena adat dan bahasanya sedikit menyimpang dari Melayu, yakni bahasa (atau baso) Melayu Palembang yang bercampur dengan kosakata Jawa. Pada masa Kesultanan, bahasa...
+  Result 2: source=1, page=9, distance=0.4102870225906372
+    penting dalam kehidupan sehari-hari. 3.2 Pengaruh Melayu Budaya Melayu sangat dominan dalam kehidupan masyarakat Palembang. Bahasa, adat istiadat, dan sistem sosial banyak dipengaruhi oleh tradisi Melayu yang berkembang sejak masa...
+  Result 3: source=1, page=11, distance=0.4108976125717163
+    Tarian ini melambangkan keramahan dan penghormatan kepada tamu. 4.3 Songket Palembang Songket Palembang adalah kain tradisional yang ditenun dengan benang emas atau perak. Kain ini biasanya digunakan dalam acara adat atau pernikahan....
+------------------------------------------------------------------------
+Question  : What is Palembang's regional GDP?
+Category  : economy
+Retrieved : 3
+  Result 1: source=3, page=66, distance=0.436376690864563
+    36 Oedjan Mas di Bumi Sriwijaya INTERAKSI ‘ULU’ DAN ‘ILIR’ Kekuasaan besar di Palembang muncul ketika Ki Gede Ing Suro mendirikan Kesultanan Palembang dengan membangun Keraton Kuto Gawang pada 1587. 11 Kesultanan Palembang mempraktikkan...
+  Result 2: source=3, page=69, distance=0.44391417503356934
+    diri ke Palembang di bawah pimpinan Ki Gede Ing Suro dan—seperti telah disebutkan—mendirikan Kerajaan Palembang yang berpusat di Keraton Kuto Gawang. 13 Kesultanan Palembang sebagai penghasil utama lada dan sangat laris di pasaran...
+  Result 3: source=3, page=18, distance=0.4615388512611389
+    kolonial Hindia Belanda Guguk Sistem pemukiman di Palembang yang dibentuk berdasarkan patronase Gunpyo Uang invasi ( invansion money) yang dicetak oleh Pemerintah Jepang dan berlaku untuk daerah-daerah pendudukan Jepang. Gunsyeibu...
+------------------------------------------------------------------------
+Question  : What agricultural commodities are produced in Palembang?
+Category  : culture
+Retrieved : 3
+  Result 1: source=3, page=99, distance=0.32795554399490356
+    langsung perkembangan dan perniagaan di kota tersebut. Berbagai aktivitas pengumpulan atau pengiriman hasil perkebunan seperti karet, sawit, kopi, teh hingga beras, serta hasil tambang semisal minyak bumi, batu bara hingga timah...
+  Result 2: source=2, page=47, distance=0.33818304538726807
+    Ruang Lingkup Dan Metode Penghitungan Produk Domestik Regional Bruto Kota Palembang Menurut Lapangan Usaha 2020-2024 31 Produk khas yang dihasilkan: ko- kas, butane, propane, petrol, gas hidrokarbon dan metan, gasoline, minyak tanah, gas...
+  Result 3: source=2, page=32, distance=0.3420635461807251
+    2.1.1.1 Tanaman Pangan Meliputi semua kegiatan ekonomi yang menghasilkan komoditas bahan pangan. Komo- ditas yang dihasilkan oleh kegiat - an tanaman pangan meliputi pa - di, palawija (jagung, kedele, ka - cang tanah, kacang hijau, ubi ja...
+------------------------------------------------------------------------
+Question  : What are Palembang's investment opportunities?
+Category  : investment
+Retrieved : 3
+  Result 1: source=3, page=1, distance=0.4095876216888428
+    Palembang telah mengukuhkan pentingnya peran lembaga perbankan ini terhadap perolehan kesempatan atas pembukaan akses kredit dan permodalan dalam mengembangkan usaha dan ekspansi bisnis di Sumatra Selatan pada era kolonial. Di era seperti...
+  Result 2: source=3, page=380, distance=0.4095876216888428
+    Palembang telah mengukuhkan pentingnya peran lembaga perbankan ini terhadap perolehan kesempatan atas pembukaan akses kredit dan permodalan dalam mengembangkan usaha dan ekspansi bisnis di Sumatra Selatan pada era kolonial. Di era seperti...
+  Result 3: source=3, page=260, distance=0.4178735613822937
+    230 Oedjan Mas di Bumi Sriwijaya Gambar 6.2 Roda pembangunan ekonomi Palembang 1970-an (Sumber: Nawawi 1971) Dalam menopang pertumbuhan ekonomi dilakukan berbagai proyek pembangunan dalam memajukan perkembangan ekonomi sejak era 1970...
+------------------------------------------------------------------------
+Question  : What sectors have growth potential in Palembang?
+Category  : investment
+Retrieved : 3
+  Result 1: source=2, page=115, distance=0.2738147974014282
+    tahun 2024. Hal ini menunjukkan selama tahun 2024 Kota Palembang mengalami pertumbuhan sebesar 5,13 persen. Pertumbuhan ini murni disebabkan oleh meningkatnya produksi di beberapa lapangan usaha , tanpa dipengaruhi inflasi. 3.1 Struktur...
+  Result 2: source=2, page=125, distance=0.27879464626312256
+    Produk Domestik Regional Bruto Kota Palembang Menurut Lapangan Usaha 2020-2024 109 Pertumbuhan Dan Peranan PDRB Kota Palembang Menurut Lapangan Usaha BAB IV PERTUMBUHAN DAN PERANAN PDRB KOTA PALEMBANG MENURUT LAPANGAN USAHA Produk Domestik...
+  Result 3: source=2, page=134, distance=0.29866260290145874
+    role of this category is very vital and is an indicator of a nation's progress, especially telecommunications services. The role of this category in the economy in Palemban g City during 2020-2024 is relatively stable. This category shows...
+------------------------------------------------------------------------
+
+========================================================================
+9. SOURCE REFERENCE MAPPING
+========================================================================
+[OK     ] Reference 1 → palembang_ebook
+          palembang01_ebook.pdf
+[OK     ] Reference 2 → palembang_gdp
+          palembang02_gdp.pdf
+[OK     ] Reference 3 → palembang_bi
+          palembang03_BankIndonesia.pdf
+
+========================================================================
+10. AUTOMATIC AUDIT SUMMARY
+========================================================================
+1. The current PDF and Chroma foundation looks ready for additional sources.
+2. Add new PDFs one at a time, rebuild Chroma, and run this audit again.
+3. Add Tavily only after the local knowledge audit remains stable.
