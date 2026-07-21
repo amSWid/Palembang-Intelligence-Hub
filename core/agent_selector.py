@@ -12,6 +12,10 @@ class AgentSelection:
     search_query: str
 
 
+# =========================================================
+# SOURCE ROUTING
+# =========================================================
+
 CATEGORY_SOURCE_MAP = {
     "food": (4, 1),
     "culture": (1, 4),
@@ -22,126 +26,182 @@ CATEGORY_SOURCE_MAP = {
 }
 
 
-CATEGORY_WEIGHTS = {
-    "food": {
-        "pempek": 10,
-        "tekwan": 10,
-        "mie celor": 10,
-        "model": 8,
-        "laksan": 8,
-        "celimpungan": 8,
-        "burgo": 8,
-        "restaurant": 7,
-        "restoran": 7,
-        "where to eat": 7,
-        "tempat makan": 7,
-        "culinary": 5,
-        "cuisine": 5,
-        "dish": 5,
-        "meal": 4,
-        "makanan": 3,
-        "kuliner": 5,
-        "food": 2,
-        "eat": 3,
-    },
-    "culture": {
-        "culture": 6,
-        "cultural": 6,
-        "tradition": 6,
-        "traditional": 4,
-        "custom": 5,
-        "dance": 6,
-        "music": 6,
-        "song": 5,
-        "art": 4,
-        "clothing": 5,
-        "language": 5,
-        "adat": 6,
-        "budaya": 6,
-        "musik": 6,
-        "tarian": 6,
-        "kesenian": 6,
-    },
-    "history": {
-        "history": 7,
-        "historical": 7,
-        "legend": 7,
-        "kingdom": 7,
-        "srivijaya": 10,
-        "sriwijaya": 10,
-        "heritage": 6,
-        "ampera": 6,
-        "musi river": 7,
-        "sungai musi": 7,
-        "geography": 6,
-        "oldest city": 8,
-        "sejarah": 7,
-        "legenda": 7,
-        "kerajaan": 7,
-        "geografi": 6,
-    },
-    "economy": {
-        "economy": 7,
-        "economic": 7,
-        "gdp": 10,
-        "grdp": 10,
-        "pdrb": 10,
-        "agriculture": 9,
-        "agricultural": 9,
-        "harvest": 8,
-        "production": 7,
-        "commodity": 7,
-        "income": 7,
-        "inflation": 8,
-        "employment": 7,
-        "trade": 6,
-        "industry": 7,
-        "processing": 6,
-        "food processing": 10,
-        "agroindustry": 10,
-        "agro-industry": 10,
-        "ekonomi": 7,
-        "pertanian": 9,
-        "panen": 8,
-        "produksi": 7,
-        "komoditas": 7,
-        "pendapatan": 7,
-        "industri": 7,
-        "pengolahan makanan": 10,
-    },
-    "investment": {
-        "investment": 10,
-        "investor": 9,
-        "opportunity": 8,
-        "opportunities": 8,
-        "business potential": 10,
-        "business opportunity": 10,
-        "growth potential": 9,
-        "market opportunity": 9,
-        "recommended sector": 9,
-        "manufacturing": 8,
-        "infrastructure": 8,
-        "logistics": 8,
-        "digital economy": 8,
-        "investment opportunity": 10,
-        "sector opportunity": 9,
-        "investasi": 10,
-        "peluang usaha": 10,
-        "peluang bisnis": 10,
-        "potensi bisnis": 9,
-        "sektor potensial": 9,
-    },
-}
+# =========================================================
+# PHRASE GROUPS
+# =========================================================
+
+SUMMARY_PHRASES = (
+    "summarize",
+    "summarise",
+    "summary",
+    "overview",
+    "main findings",
+    "ringkas",
+    "rangkum",
+)
 
 
-CATEGORY_PRIORITY = {
-    "investment": 5,
-    "economy": 4,
-    "food": 3,
-    "history": 2,
-    "culture": 1,
-    "general": 0,
-}
+ARTICLE_PHRASES = (
+    "food article",
+    "culinary article",
+    "artikel makanan",
+    "artikel kuliner",
+)
+
+
+INVESTMENT_INTENT_PHRASES = (
+    "investment",
+    "invest",
+    "investor",
+    "opportunity",
+    "opportunities",
+    "business potential",
+    "market potential",
+    "growth potential",
+    "promising sector",
+    "recommended sector",
+    "recommend",
+    "recommendation",
+    "business prospect",
+    "investment prospect",
+    "worth investing",
+    "should i invest",
+    "where to invest",
+    "peluang",
+    "potensi bisnis",
+    "potensi usaha",
+    "sektor potensial",
+    "sektor menjanjikan",
+    "prospek bisnis",
+    "rekomendasi investasi",
+    "layak investasi",
+)
+
+
+FOOD_PHRASES = (
+    "pempek",
+    "tekwan",
+    "mie celor",
+    "model",
+    "laksan",
+    "celimpungan",
+    "burgo",
+    "pindang",
+    "cuko",
+    "restaurant",
+    "where to eat",
+    "traditional food",
+    "local food",
+    "culinary",
+    "cuisine",
+    "dish",
+    "makanan",
+    "kuliner",
+    "restoran",
+    "tempat makan",
+)
+
+
+FOOD_INDUSTRY_PHRASES = (
+    "food processing",
+    "food industry",
+    "food manufacturing",
+    "agroindustry",
+    "agro-industry",
+    "processed food",
+    "pengolahan makanan",
+    "pengolahan pangan",
+    "industri makanan",
+    "industri pangan",
+    "agroindustri",
+)
+
+
+HISTORY_PHRASES = (
+    "history",
+    "historical",
+    "legend",
+    "kingdom",
+    "srivijaya",
+    "sriwijaya",
+    "heritage",
+    "ampera",
+    "musi river",
+    "geography",
+    "inscription",
+    "oldest city",
+    "sejarah",
+    "legenda",
+    "kerajaan",
+    "warisan",
+    "sungai musi",
+    "geografi",
+    "prasasti",
+)
+
+
+CULTURE_PHRASES = (
+    "culture",
+    "cultural",
+    "tradition",
+    "custom",
+    "dance",
+    "music",
+    "song",
+    "art",
+    "traditional clothing",
+    "language",
+    "adat",
+    "budaya",
+    "tradisi",
+    "tarian",
+    "musik",
+    "kesenian",
+    "pakaian adat",
+    "bahasa",
+)
+
+
+ECONOMY_PHRASES = (
+    "economy",
+    "economic",
+    "gdp",
+    "grdp",
+    "pdrb",
+    "economic growth",
+    "growth rate",
+    "sector contribution",
+    "contribution",
+    "income",
+    "inflation",
+    "employment",
+    "unemployment",
+    "production",
+    "harvest",
+    "commodity",
+    "agriculture",
+    "agricultural",
+    "farming",
+    "industry",
+    "manufacturing",
+    "trade",
+    "ekonomi",
+    "pertumbuhan ekonomi",
+    "kontribusi",
+    "pendapatan",
+    "inflasi",
+    "tenaga kerja",
+    "produksi",
+    "panen",
+    "komoditas",
+    "pertanian",
+    "industri",
+)
+
+
+# =========================================================
+# TEXT HELPERS
+# =========================================================
 
 
 def normalise_question(question: str) -> str:
@@ -152,90 +212,130 @@ def normalise_question(question: str) -> str:
     return " ".join(question.lower().strip().split())
 
 
-def calculate_category_score(
-    question: str,
-    category: str,
-) -> int:
+def contains_phrase(
+    text: str,
+    phrase: str,
+) -> bool:
     """
-    Calculate weighted keyword score for one category.
+    Match a complete word or a multi-word phrase.
     """
 
-    weighted_keywords = CATEGORY_WEIGHTS.get(
-        category,
-        {},
-    )
+    phrase = phrase.lower().strip()
 
-    score = 0
+    if not phrase:
+        return False
 
-    for keyword, weight in weighted_keywords.items():
-        if keyword in question:
-            score += weight
+    if " " in phrase:
+        return phrase in text
 
-    return score
+    padded_text = f" {text} "
+
+    return f" {phrase} " in padded_text
 
 
 def contains_any(
-    question: str,
+    text: str,
     phrases: tuple[str, ...],
 ) -> bool:
     """
-    Return True when at least one phrase is found.
+    Return True when any phrase exists in the text.
     """
 
-    return any(phrase in question for phrase in phrases)
+    return any(contains_phrase(text, phrase) for phrase in phrases)
 
 
-def build_search_query(
+# =========================================================
+# CLASSIFICATION
+# =========================================================
+
+
+def is_food_article_summary(
     question: str,
-    category: str,
-) -> str:
+) -> bool:
     """
-    Build a focused semantic search query.
+    Detect a request to summarize Source 4.
     """
 
-    query_prefixes = {
-        "food": (
-            "Palembang traditional food culinary dish restaurant "
-            "ingredients preparation cultural meaning"
-        ),
-        "culture": (
-            "Palembang culture traditions arts music dance language "
-            "customs cultural identity"
-        ),
-        "history": (
-            "Palembang history heritage Srivijaya legends geography "
-            "Musi River historical development"
-        ),
-        "economy": (
-            "Palembang economy GDP GRDP agriculture production "
-            "commodity industry income inflation employment"
-        ),
-        "investment": (
-            "Palembang investment opportunities growth sectors "
-            "market potential industry infrastructure logistics"
-        ),
-        "general": (
-            "Palembang local knowledge tourism economy culture "
-            "history food investment"
-        ),
-    }
-
-    prefix = query_prefixes.get(
-        category,
-        query_prefixes["general"],
+    return contains_any(question, SUMMARY_PHRASES) and contains_any(
+        question, ARTICLE_PHRASES
     )
 
-    return f"{prefix}. User question: {question}"
+
+def select_category(
+    question: str,
+) -> str:
+    """
+    Select a category using a small set of intent rules.
+
+    Intent has priority over subject words.
+
+    Examples:
+
+        agriculture contribution to GDP
+        -> economy
+
+        agriculture opportunities
+        -> investment
+
+        food processing output
+        -> economy
+
+        food processing opportunities
+        -> investment
+    """
+
+    if contains_any(
+        question,
+        INVESTMENT_INTENT_PHRASES,
+    ):
+        return "investment"
+
+    if contains_any(
+        question,
+        FOOD_INDUSTRY_PHRASES,
+    ):
+        return "economy"
+
+    if contains_any(
+        question,
+        FOOD_PHRASES,
+    ):
+        return "food"
+
+    if contains_any(
+        question,
+        HISTORY_PHRASES,
+    ):
+        return "history"
+
+    if contains_any(
+        question,
+        CULTURE_PHRASES,
+    ):
+        return "culture"
+
+    if contains_any(
+        question,
+        ECONOMY_PHRASES,
+    ):
+        return "economy"
+
+    return "general"
+
+
+# =========================================================
+# MAIN SELECTOR
+# =========================================================
 
 
 def select_agent(
     question: str,
 ) -> AgentSelection:
     """
-    Select the best category and source order.
+    Select category and allowed sources.
 
-    Uses weighted matching so broad words such as "food"
-    do not override stronger economic or investment intent.
+    The original cleaned question is used directly as the
+    semantic retrieval query. No long query expansion is added.
     """
 
     cleaned_question = normalise_question(question)
@@ -244,161 +344,48 @@ def select_agent(
         return AgentSelection(
             category="general",
             source_ids=CATEGORY_SOURCE_MAP["general"],
-            search_query="Palembang local knowledge",
+            search_query="Palembang",
         )
 
-    food_article_phrases = (
-        "food article",
-        "culinary article",
-        "article about food",
-        "summarize the food article",
-        "summarise the food article",
-        "summary of the food article",
-        "artikel makanan",
-        "artikel kuliner",
-        "ringkas artikel makanan",
-        "ringkas artikel kuliner",
-        "rangkum artikel makanan",
-        "rangkum artikel kuliner",
-    )
-
-    if contains_any(
-        cleaned_question,
-        food_article_phrases,
-    ):
+    if is_food_article_summary(cleaned_question):
         return AgentSelection(
             category="food",
             source_ids=(4,),
-            search_query=(
-                "Palembang culinary article traditional foods "
-                "culinary identity history dishes preservation"
-            ),
+            search_query=cleaned_question,
         )
 
-    food_processing_phrases = (
-        "food processing",
-        "food industry",
-        "agricultural processing",
-        "agriculture processing",
-        "agroindustry",
-        "agro-industry",
-        "pengolahan makanan",
-        "industri makanan",
-        "industri pangan",
-        "agroindustri",
-    )
-
-    investment_phrases = (
-        "investment opportunity",
-        "investment opportunities",
-        "business opportunity",
-        "business opportunities",
-        "market opportunity",
-        "growth potential",
-        "recommended sector",
-        "peluang investasi",
-        "peluang usaha",
-        "peluang bisnis",
-        "potensi bisnis",
-    )
-
-    agriculture_phrases = (
-        "agriculture",
-        "agricultural",
-        "harvest",
-        "commodity",
-        "crop",
-        "farming",
-        "pertanian",
-        "panen",
-        "komoditas",
-    )
-
-    if contains_any(cleaned_question, food_processing_phrases) and contains_any(
-        cleaned_question, investment_phrases
-    ):
-        return AgentSelection(
-            category="investment",
-            source_ids=(3, 2),
-            search_query=(
-                "Palembang agriculture food processing investment "
-                "opportunities agroindustry market potential "
-                f"user question: {cleaned_question}"
-            ),
-        )
-
-    if contains_any(cleaned_question, agriculture_phrases) and contains_any(
-        cleaned_question, investment_phrases
-    ):
-        return AgentSelection(
-            category="investment",
-            source_ids=(3, 2),
-            search_query=(
-                "Palembang agriculture investment opportunities "
-                "production commodities growth sectors "
-                f"user question: {cleaned_question}"
-            ),
-        )
-
-    category_scores = {
-        category: calculate_category_score(
-            cleaned_question,
-            category,
-        )
-        for category in CATEGORY_WEIGHTS
-    }
-
-    highest_score = max(
-        category_scores.values(),
-        default=0,
-    )
-
-    if highest_score <= 0:
-        selected_category = "general"
-    else:
-        matching_categories = [
-            category
-            for category, score in category_scores.items()
-            if score == highest_score
-        ]
-
-        selected_category = max(
-            matching_categories,
-            key=lambda category: CATEGORY_PRIORITY.get(
-                category,
-                0,
-            ),
-        )
+    category = select_category(cleaned_question)
 
     return AgentSelection(
-        category=selected_category,
-        source_ids=CATEGORY_SOURCE_MAP[selected_category],
-        search_query=build_search_query(
-            cleaned_question,
-            selected_category,
-        ),
+        category=category,
+        source_ids=CATEGORY_SOURCE_MAP[category],
+        search_query=cleaned_question,
     )
+
+
+# =========================================================
+# PROMPT INSTRUCTIONS
+# =========================================================
 
 
 def get_category_instruction(
     category: str,
 ) -> str:
     """
-    Return a strict instruction for the selected agent.
+    Return strict instructions for the selected category.
     """
 
     instructions = {
         "food": (
             "Answer only about the requested Palembang food, "
-            "its characteristics, ingredients, preparation, cultural "
-            "meaning or documented restaurant information. A question "
-            "about the food industry or food processing is economic, "
-            "not a request for culinary dish information."
+            "its characteristics, ingredients, preparation, origin, "
+            "cultural meaning or documented restaurant information. "
+            "Food processing and the food industry are economic topics."
         ),
         "culture": (
-            "Answer about Palembang traditions, arts, music, language, "
-            "customs or cultural identity. Keep the answer focused on "
-            "the cultural subject requested."
+            "Answer about Palembang traditions, arts, music, dance, "
+            "language, customs or cultural identity. Keep the response "
+            "focused on the requested cultural subject."
         ),
         "history": (
             "Answer about Palembang history, legends, heritage or "
@@ -406,22 +393,22 @@ def get_category_instruction(
             "when the source makes that distinction."
         ),
         "economy": (
-            "Answer using documented economic information such as GDP, "
-            "agriculture, production, commodities, income, inflation, "
-            "employment, industry or food processing. Do not invent "
-            "statistics or unsupported opportunities."
+            "Answer using documented economic evidence such as GDP, "
+            "production, agriculture, commodities, income, inflation, "
+            "employment or sector performance. Do not invent statistics "
+            "or unsupported business opportunities."
         ),
         "investment": (
-            "Answer using documented growth, market conditions, sector "
-            "performance and investment opportunities. Combine economic "
-            "evidence from source 2 with investment context from source 3 "
-            "when relevant. Clearly separate source facts from analytical "
-            "recommendations."
+            "Evaluate the requested subject using documented economic "
+            "and investment evidence. A sector mentioned by the user is "
+            "a subject for analysis, not automatic proof that it is a "
+            "good investment. Clearly separate source facts, analysis "
+            "and recommendations."
         ),
         "general": (
             "Answer the exact Palembang question using only relevant "
-            "retrieved information. Avoid unrelated details and do not "
-            "force an answer when the sources are insufficient."
+            "retrieved information. State clearly when the available "
+            "sources are insufficient."
         ),
     }
 

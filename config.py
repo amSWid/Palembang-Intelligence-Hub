@@ -42,7 +42,7 @@ URL_SOURCE_CONFIG = get_url_sources(enabled_only=True)
 
 
 PDF_FILES = {
-    source_key: (RAW_PDF_DIR / str(source["filename"]))
+    source_key: RAW_PDF_DIR / str(source["filename"])
     for source_key, source in PDF_SOURCE_CONFIG.items()
 }
 
@@ -64,12 +64,20 @@ SOURCE_ID_MAP = get_source_id_map(
 
 CLEANED_TEXT_FILE = CLEANED_DIR / "palembang_cleaned.txt"
 
-EMBEDDING_MODEL = "sentence-transformers/" "paraphrase-multilingual-MiniLM-L12-v2"
+EMBEDDING_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 
 CHUNK_SIZE = 800
 CHUNK_OVERLAP = 120
 
 COLLECTION_NAME = "palembang_intelligence"
+
+
+# =========================================================
+# RETRIEVAL SETTINGS
+# =========================================================
+
+# Number of candidates retrieved from each allowed source.
+RETRIEVAL_CANDIDATES_PER_SOURCE = 6
 
 
 # =========================================================

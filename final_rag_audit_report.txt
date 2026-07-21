@@ -1,0 +1,208 @@
+PALEMBANG INTELLIGENCE HUB - FINAL RAG AUDIT
+
+========================================================================
+1. PYTHON SYNTAX AUDIT
+========================================================================
+[PASS] app.py
+[PASS] config.py
+[PASS] core\agent_selector.py
+[PASS] core\knowledge_catalog.py
+[PASS] core\chroma_loader.py
+[PASS] core\rag_agent.py
+[PASS] core\prompt_builder.py
+[PASS] core\build_chroma.py
+[PASS] pages\home.py
+
+========================================================================
+2. ENVIRONMENT AND SECURITY AUDIT
+========================================================================
+[PASS] Local .env file exists.
+[PASS] GROQ_API_KEY is loaded without displaying its value.
+[PASS] .env is ignored by Git.
+       .gitignore:2:*	.env
+
+========================================================================
+3. GIT AUDIT
+========================================================================
+[WARN] Git working tree contains changes:
+M .gitignore
+ M README.MD
+ M config.py
+ M core/agent_selector.py
+ M requirements.txt
+?? final_rag_audit_report.txt
+
+========================================================================
+4. KNOWLEDGE CATALOG AND CONFIG AUDIT
+========================================================================
+[PASS] Knowledge Catalog validation passed.
+[INFO] PDF sources: 4
+[INFO] URL sources: 0
+[INFO] Chroma directory: C:\Users\SWIDJAJA\Desktop\Belajar DATA\sources from DTSENSE\7_Generative AI\FP_Agentic\DTS_PalembangAI\chroma_db
+[INFO] Collection: palembang_intelligence
+[INFO] Embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+[INFO] Chunk size: 800
+[INFO] Chunk overlap: 120
+[INFO] LLM model: llama-3.3-70b-versatile
+[SOURCE 1] Palembang Tourism, History, Culture and Culinary Ebook
+[SOURCE 2] Palembang GDP and Regional Economic Report
+[SOURCE 3] Bank Indonesia Economic and Investment Report
+[SOURCE 4] Palembang Culinary Article
+
+========================================================================
+5. CHROMA AND CHUNK AUDIT
+========================================================================
+[PASS] Collection opened: palembang_intelligence
+[INFO] Document count: 1714
+[INFO] Database path: C:\Users\SWIDJAJA\Desktop\Belajar DATA\sources from DTSENSE\7_Generative AI\FP_Agentic\DTS_PalembangAI\chroma_db
+[INFO] Embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+[INFO] Sampled chunks: 300
+[INFO] Empty chunks: 0
+[INFO] Reference-like chunks: 1
+[INFO] Missing page metadata: 0
+[INFO] Source distribution: {1: 52, 2: 248}
+[INFO] Minimum chunk characters: 109
+[INFO] Average chunk characters: 659.2
+[INFO] Maximum chunk characters: 782
+[WARN] Reference or bibliography chunks still exist inside the collection.
+
+========================================================================
+6. AGENT SELECTOR AUDIT
+========================================================================
+[PASS] What makes pempek special in Palembang?
+       Expected: food
+       Actual: food
+       Sources: (4, 1)
+       Search query: what makes pempek special in palembang?
+[PASS] Tell me about the history of Sriwijaya.
+       Expected: history
+       Actual: history
+       Sources: (1,)
+       Search query: tell me about the history of sriwijaya.
+[PASS] What is the GDP of Palembang?
+       Expected: economy
+       Actual: economy
+       Sources: (2, 3)
+       Search query: what is the gdp of palembang?
+[PASS] What agriculture and food processing opportunities exist in Palembang?
+       Expected: investment
+       Actual: investment
+       Sources: (3, 2)
+       Search query: what agriculture and food processing opportunities exist in palembang?
+[PASS] Summarize the food article.
+       Expected: food
+       Actual: food
+       Sources: (4,)
+       Search query: summarize the food article.
+
+========================================================================
+7. SEMANTIC RETRIEVAL AUDIT
+========================================================================
+
+QUESTION: What makes pempek special in Palembang?
+CATEGORY: food
+ALLOWED SOURCES: (4, 1)
+RETRIEVED CHUNKS: 3
+  Chunk 1 | Source 4 | Page 2 | Distance 0.328830
+  Preview: supports its status as a symbolic element of Palembang’s identity? The primary objective of this study is to provide an in-depth exploration of the history of Pempek as a tra - dit
+  Chunk 2 | Source 4 | Page 0 | Distance 0.352067
+  Preview: spread industry. The archives from various government and private sector events showed that Pempek has become increasingly famous in Indonesia and around the world over the last 20
+  Chunk 3 | Source 4 | Page 0 | Distance 0.374429
+  Preview: and narration (historiography). The result showed that the production of Pempek depended on the availability of raw materials in the South Sumatra region, such as fish, sago, and b
+
+QUESTION: Tell me about the history of Sriwijaya.
+CATEGORY: history
+ALLOWED SOURCES: (1,)
+RETRIEVED CHUNKS: 3
+  Chunk 1 | Source 1 | Page 4 | Distance 0.306337
+  Preview: mendirikan wilayah kekuasaan baru. Prasasti ini menjadi salah satu bukti utama berdirinya Kedatuan Sriwijaya. Selain sebagai sumber sejarah, prasasti ini menunjukkan bahwa masyarak
+  Chunk 2 | Source 1 | Page 7 | Distance 0.366117
+  Preview: Kerajaan-kerajaan kecil yang dahulu berada di bawah pengaruh Sriwijaya mulai berkembang menjadi kerajaan mandiri. Walaupun Sriwijaya runtuh, pengaruh budayanya masih dapat dirasaka
+  Chunk 3 | Source 1 | Page 7 | Distance 0.441238
+  Preview: Banyak pelaut asing yang mencatat kehidupan Palembang. Salah satunya adalah Chau Ju-Kua melalui kronik Chu-Fan-Chi. Ia menggambarkan Sriwijaya sebagai negara yang menguasai lalu li
+
+QUESTION: What is the GDP of Palembang?
+CATEGORY: economy
+ALLOWED SOURCES: (2, 3)
+RETRIEVED CHUNKS: 3
+  Chunk 1 | Source 3 | Page 68 | Distance 0.484325
+  Preview: diri ke Palembang di bawah pimpinan Ki Gede Ing Suro dan—seperti telah disebutkan—mendirikan Kerajaan Palembang yang berpusat di Keraton Kuto Gawang. 13 Kesultanan Palembang sebaga
+  Chunk 2 | Source 3 | Page 65 | Distance 0.512713
+  Preview: 36 Oedjan Mas di Bumi Sriwijaya INTERAKSI ‘ULU’ DAN ‘ILIR’ Kekuasaan besar di Palembang muncul ketika Ki Gede Ing Suro mendirikan Kesultanan Palembang dengan membangun Keraton Kuto
+  Chunk 3 | Source 3 | Page 371 | Distance 0.517727
+  Preview: Hanafiah, Johan. Melayu-Jawa: Citra Budaya dan Sejarah Palembang. (Jakarta: PT. Radjagrafindo Persada, 1995) Hanafiah, Djohan. Sejarah Perkembangan Pemerintahan Kotamadya Daerah Ti
+
+QUESTION: What agriculture and food processing opportunities exist in Palembang?
+CATEGORY: investment
+ALLOWED SOURCES: (3, 2)
+RETRIEVED CHUNKS: 3
+  Chunk 1 | Source 2 | Page 34 | Distance 0.326954
+  Preview: Ruang Lingkup Dan Metode Penghitungan Produk Domestik Regional Bruto Kota Palembang Menurut Lapangan Usaha 2020-2024 19 2.1.1.4 Peternakan Subkategori Peternakan mencakup semua usa
+  Chunk 2 | Source 3 | Page 114 | Distance 0.327871
+  Preview: dan petani dalam menjalankan kegiatan ekonominya, dan merupakan pengembangan sistem saluran pasar terutama sejak perkebunan kopi dan karet, termasuk kebun milik rakyat, berproduksi
+  Chunk 3 | Source 3 | Page 285 | Distance 0.330368
+  Preview: saranan untuk menyalurkan beberapa komoditas pangan utama-salah satunya cabai merah keriting-dengan harga yang lebih rendah daripada harga pasar. Pasar Penyeimbang merupakan progra
+
+QUESTION: Summarize the food article.
+CATEGORY: food
+ALLOWED SOURCES: (4,)
+RETRIEVED CHUNKS: 8
+  Chunk 1 | Source 4 | Page 0 | Distance not available
+  Preview: widely explained from various perspectives, including expert, social, European consumer, and product ingre - dients[1]. Generally, traditional food is considered one of the cultura
+  Chunk 2 | Source 4 | Page 2 | Distance not available
+  Preview: economic, and political aspects [22]. Based on prior studies, exploring the localized aspects of Pempek as a traditional food, from its historical origins to its role in shaping th
+  Chunk 3 | Source 4 | Page 4 | Distance not available
+  Preview: Drug Supervisory Agency of Palembang City’s Health Department). In general, these standards apply to other Pempek production businesses in the city as well. The main constraints in
+  Chunk 4 | Source 4 | Page 6 | Distance not available
+  Preview: Ground fish and sago or tapioca are prepared by mix - ing 1 kg fish meat, ½/1 L water, and ½/1 kg sago, salt to taste, three eggs, and seasonings to make Pempek dough (as shown in 
+  Chunk 5 | Source 4 | Page 8 | Distance not available
+  Preview: Page 9 of 15 Wargadalem et al. Journal of Ethnic Foods (2023) 10:45 slices, vermicelli, and tofu slices and is typically served with Cuko (as shown in Fig. 8 ). There are three typ
+  Chunk 6 | Source 4 | Page 10 | Distance not available
+  Preview: nic foods [59]. For example, in Palembang, wheat flour mixed with water is cooked and thickened, then eggs and sago are added to make Pempek Ada’an. They also process sago starch w
+  Chunk 7 | Source 4 | Page 12 | Distance not available
+  Preview: cates that Pempek has made a substantial contribution to the rise in domestic income. From the aforementioned explanation, it is also evident that this traditional food is the iden
+  Chunk 8 | Source 4 | Page 14 | Distance not available
+  Preview: 63. Sely F. Musi Triboatton ajang promosi potensi Sumatera Selatan. ANTARA SUMSEL. 2017. 64. Hantoro J. Peserta ISG Siapakan Oleh-Oleh Pempek Palembang. Tempo. co. 2013. 65. Cahyan
+
+========================================================================
+8. OPTIONAL LIVE GROQ RAG AUDIT
+========================================================================
+
+QUESTION: What makes pempek special in Palembang?
+CATEGORY: food
+PRIMARY SOURCE: 4
+ALL SOURCES: (4,)
+ANSWER: What makes Pempek special in Palembang is its unique flavor and aroma, which is supported by the Nginum culture. The production of Pempek depends on the availability of raw materials in the South Sumatra region, such as fish, sago, and brown sugar. Its history, traced back to the Srivijaya Inscription (682 AD) and the Sultanate of Palembang, also contributes to its significance as a traditional dish and a symbol of Palembang City's identity.
+
+QUESTION: What agriculture and food processing opportunities exist in Palembang?
+CATEGORY: investment
+PRIMARY SOURCE: 3
+ALL SOURCES: (2, 3)
+ANSWER: Based on the provided context, there is limited information directly related to agriculture and food processing opportunities in Palembang. However, some relevant points can be extracted:
+
+Documented evidence:
+- The context mentions peternakan (livestock) as part of the regional economy, including the cultivation of various types of livestock and poultry for meat, dairy, and egg production (Source ID: 2, palembang_gdp).
+- It also mentions the production of specific commodities such as sapi potong (beef cattle), kerbau (buffaloes), kambing (goats), domba (sheep), babi (pigs), kuda (horses), ayam (chickens), and itik (ducks) (Source ID: 2, palembang_gdp).
+- Additionally, there is a mention of perkebunan kopi dan karet (coffee and rubber plantations), which suggests the presence of agricultural activities in the region (Source ID: 3, palembang_bi).
+- The context also highlights initiatives like Pasar Penyeimbang, which aims to provide primary food commodities at lower prices, and Toko Tani Indonesia, which facilitates the direct sale of agricultural products from farmers to consumers (Source ID: 3, palembang_bi).
+
+Analytical interpretation:
+Given the evidence of existing agricultural activities and initiatives to support the distribution of agricultural products, it can be inferred that there are opportunities for investment in agriculture and food processing in Palembang. The presence of livestock and plantation activities suggests a potential for growth in these sectors. Furthermore, programs aimed at improving the accessibility and affordability of fresh produce indicate a demand for efficient food processing and distribution systems.
+
+Recommendations:
+Based on the analysis, potential investors may consider exploring opportunities in livestock farming, plantation management, and food processing. Investing in infrastructure that supports the efficient distribution of agricultural products, such as cold storage facilities or transportation networks, could also be beneficial. Additionally, partnering with local initiatives like Pasar Penyeimbang and Toko Tani Indonesia could provide a gateway to the local market and support the development of a more sustainable food system in Palembang.
+
+========================================================================
+9. FINAL AUDIT SUMMARY
+========================================================================
+[PASS] Python syntax
+[PASS] Environment security
+[PASS] Git status
+[PASS] Catalog and config
+[PASS] Chroma and chunks
+[PASS] Agent selector
+[PASS] Semantic retrieval
+[PASS] Live Groq RAG
+
+TOTAL: 8/8 audit sections passed.
+FINAL STATUS: READY FOR MANUAL REVIEW AND GITHUB PUSH.

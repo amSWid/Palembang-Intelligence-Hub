@@ -10,6 +10,7 @@
 !config.py
 !requirements.txt
 !audit_project.py
+!final_rag_audit_report.txt
 
 # Allow the core folder, then selected files only
 !core/

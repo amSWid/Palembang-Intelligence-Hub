@@ -43,8 +43,11 @@ The application combines local knowledge sources with Retrieval-Augmented Genera
 ## Project Status
 
 This project is currently under active development as part of my DTS DATA portfolio.
+This repository contains selected source files from the project portfolio.
 
 ---
+
+
 
 ## Author
 
