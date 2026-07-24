@@ -5,15 +5,12 @@ An AI-powered Tourism & Investment Assistant built with Streamlit, Retrieval-Aug
 ## Project Overview
 
 Palembang Intelligence Hub is an intelligent assistant that helps users explore the city of Palembang through natural language.
-
-The assistant can answer questions about:
-
+The assistant can response questions about:
 - 🏛 History
 - 🎭 Culture
 - 🍜 Traditional Food
 - 📈 Economy
 - 💼 Investment Opportunities
-
 The application combines local knowledge sources with Retrieval-Augmented Generation (RAG) to produce contextual answers.
 
 ---
@@ -71,10 +68,16 @@ This repository contains selected source files from the project portfolio.
 
 ---
 
+## Creative Assets
 
+The visual identity of Palembang Intelligence Hub, including the robot character, interface design, background images, and original music, was independently created for this project.Unless otherwise stated, all creative assets are original works by **S. Widjaja**.
 
+---
 ## Author
 
 **S. Widjaja**
-
 Indonesia
+
+---
+
+© 2026 S. Widjaja. All rights reserved.

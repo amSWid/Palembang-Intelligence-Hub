@@ -196,10 +196,15 @@ def build_robot_html(
                     {music_icon}
                 </span>
 
-                <span>
+                <span class="robot-music-label">
                     {music_label}
                 </span>
             </div>
+
+            <div class="robot-music-credit">
+                Original music by S. Widjaja
+            </div>
+
         </a>
         """).strip()
 
@@ -277,7 +282,7 @@ def render_hero():
             .robot-music-link {{
                 position: absolute;
                 left: 50%;
-                top: 50%;
+                top: 48%;
                 z-index: 20;
                 display: flex;
                 flex-direction: column;
@@ -317,23 +322,24 @@ def render_hero():
                 display: inline-flex;
                 align-items: center;
                 justify-content: center;
-                gap: 7px;
-                min-width: 108px;
-                margin-top: 2px;
-                padding: 7px 13px;
+                gap: 10px;
+                min-width: 150px;
+                margin-top: 10px;
+                padding: 10px 22px;
                 border:
                     1px solid
                     rgba(87, 76, 255, 0.18);
                 border-radius: 999px;
                 background:
-                    rgba(255, 255, 255, 0.88);
+                    rgba(255, 255, 255, 0.92);
                 box-shadow:
                     0 8px 22px
                     rgba(15, 23, 42, 0.08);
                 color: #5750d8;
-                font-size: 12px;
+                font-size: 13px;
                 font-weight: 700;
-                letter-spacing: 0.01em;
+                letter-spacing: 0.02em;
+                line-height: 1;
                 white-space: nowrap;
                 backdrop-filter: blur(12px);
                 transition:
@@ -371,6 +377,22 @@ def render_hero():
                 height: 18px;
                 border-radius: 50%;
                 font-size: 14px;
+            }}
+
+            .robot-music-label {{
+                display: inline-block;
+                line-height: 1;
+            }}
+
+            .robot-music-credit {{
+                margin-top: 8px;
+                color: #718198;
+                font-size: 10px;
+                font-weight: 600;
+                letter-spacing: 0.03em;
+                line-height: 1.3;
+                text-align: center;
+                white-space: nowrap;
             }}
 
             .robot-music-link.music-active

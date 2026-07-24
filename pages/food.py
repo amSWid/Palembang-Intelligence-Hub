@@ -261,6 +261,7 @@ def render_restaurant_assistant():
     st.html(assistant_html)
 
 
+
 def render_extra_food_questions():
     """
     Render extra Food question buttons.
@@ -303,80 +304,6 @@ def render_extra_food_questions():
                 set_food_question(question)
                 st.rerun()
 
-def render_did_you_know():
-    """
-    Render a dynamic 'Did You Know?' panel
-    based on the retrieved Food documents.
-    """
-
-    result = st.session_state.get(
-        "food_ai_result"
-    )
-
-    if result is None:
-        return
-
-    documents = getattr(
-        result,
-        "documents",
-        [],
-    )
-
-    if not documents:
-        return
-
-    text = documents[0].text
-
-    text = " ".join(
-        text.split()
-    )
-
-    if len(text) > 320:
-        text = (
-            text[:320]
-            .rsplit(" ", 1)[0]
-            + "..."
-        )
-
-    st.markdown(
-        dedent(
-            f"""
-            <div style="
-                margin-top:35px;
-                padding:22px;
-                border-radius:18px;
-                background:linear-gradient(
-                    135deg,
-                    #ffffff,
-                    #f6fbff
-                );
-                border:1px solid #dce8f4;
-            ">
-
-                <div style="
-                    font-size:20px;
-                    font-weight:700;
-                    color:#1f4f7a;
-                    margin-bottom:12px;
-                ">
-                    💡 Did You Know?
-                </div>
-
-                <div style="
-                    color:#5f7184;
-                    line-height:1.8;
-                    font-size:14px;
-                ">
-                    {text}
-                </div>
-
-            </div>
-            """
-        ),
-        unsafe_allow_html=True,
-    )
-
-
 def render_food_page():
     """
     Render the complete Palembang Food page.
@@ -400,4 +327,3 @@ def render_food_page():
 
     render_restaurant_assistant()
     render_extra_food_questions()
-    render_did_you_know()

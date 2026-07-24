@@ -225,17 +225,7 @@ def render_lower_content():
                     Welcome!
                 </div>
 
-                <div class="info-card-text">
-                    I am your AI travel assistant for Palembang.
-                    I can help you discover heritage, food,
-                    accommodation, transportation, economic
-                    information and investment opportunities.
-                </div>
-
-                <div class="info-button">
-                    ▶ How to use
-                </div>
-
+                
             </div>
 
             <div class="recommendation-card">

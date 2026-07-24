@@ -13,17 +13,12 @@ class AgentSelection:
 
 
 # =========================================================
-# SOURCE ROUTING
+# SOURCE ACCESS
 # =========================================================
 
-CATEGORY_SOURCE_MAP = {
-    "food": (4, 1),
-    "culture": (1, 4),
-    "history": (1,),
-    "economy": (2, 3),
-    "investment": (3, 2),
-    "general": (1, 2, 3, 4),
-}
+# Every normal Palembang question may search all references.
+# Retrieval will decide which chunks are truly relevant.
+ALL_SOURCE_IDS = (1, 2, 3, 4)
 
 
 # =========================================================
@@ -217,7 +212,7 @@ def contains_phrase(
     phrase: str,
 ) -> bool:
     """
-    Match a complete word or a multi-word phrase.
+    Match a complete word or multi-word phrase.
     """
 
     phrase = phrase.lower().strip()
@@ -253,7 +248,8 @@ def is_food_article_summary(
     question: str,
 ) -> bool:
     """
-    Detect a request to summarize Source 4.
+    Detect a request specifically asking for
+    a summary of Reference 4.
     """
 
     return contains_any(question, SUMMARY_PHRASES) and contains_any(
@@ -265,23 +261,10 @@ def select_category(
     question: str,
 ) -> str:
     """
-    Select a category using a small set of intent rules.
+    Select the question category.
 
-    Intent has priority over subject words.
-
-    Examples:
-
-        agriculture contribution to GDP
-        -> economy
-
-        agriculture opportunities
-        -> investment
-
-        food processing output
-        -> economy
-
-        food processing opportunities
-        -> investment
+    Category controls the prompt only.
+    It no longer blocks access to references.
     """
 
     if contains_any(
@@ -332,10 +315,13 @@ def select_agent(
     question: str,
 ) -> AgentSelection:
     """
-    Select category and allowed sources.
+    Classify the question and provide source access.
 
-    The original cleaned question is used directly as the
-    semantic retrieval query. No long query expansion is added.
+    Normal questions:
+        search References 1, 2, 3 and 4.
+
+    Explicit culinary article summaries:
+        summarize Reference 4 only.
     """
 
     cleaned_question = normalise_question(question)
@@ -343,7 +329,7 @@ def select_agent(
     if not cleaned_question:
         return AgentSelection(
             category="general",
-            source_ids=CATEGORY_SOURCE_MAP["general"],
+            source_ids=ALL_SOURCE_IDS,
             search_query="Palembang",
         )
 
@@ -358,7 +344,7 @@ def select_agent(
 
     return AgentSelection(
         category=category,
-        source_ids=CATEGORY_SOURCE_MAP[category],
+        source_ids=ALL_SOURCE_IDS,
         search_query=cleaned_question,
     )
 
@@ -377,38 +363,40 @@ def get_category_instruction(
 
     instructions = {
         "food": (
-            "Answer only about the requested Palembang food, "
-            "its characteristics, ingredients, preparation, origin, "
-            "cultural meaning or documented restaurant information. "
-            "Food processing and the food industry are economic topics."
+            "Answer only about the requested Palembang dish. "
+            "Use evidence directly connected to that dish. "
+            "Do not mix information about another dish unless the "
+            "question explicitly requests a comparison. "
+            "Restaurant information may be included only when it is "
+            "documented in the retrieved evidence."
         ),
         "culture": (
-            "Answer about Palembang traditions, arts, music, dance, "
-            "language, customs or cultural identity. Keep the response "
-            "focused on the requested cultural subject."
+            "Answer only about the requested Palembang tradition, "
+            "art, music, dance, language, custom or cultural identity. "
+            "Do not introduce unrelated historical or economic claims."
         ),
         "history": (
-            "Answer about Palembang history, legends, heritage or "
-            "geography. Distinguish documented history from legend "
-            "when the source makes that distinction."
+            "Answer only about the requested Palembang historical, "
+            "heritage, legendary or geographical subject. "
+            "Distinguish documented history from legend."
         ),
         "economy": (
             "Answer using documented economic evidence such as GDP, "
             "production, agriculture, commodities, income, inflation, "
-            "employment or sector performance. Do not invent statistics "
-            "or unsupported business opportunities."
+            "employment or sector performance. "
+            "Do not invent statistics or opportunities."
         ),
         "investment": (
             "Evaluate the requested subject using documented economic "
-            "and investment evidence. A sector mentioned by the user is "
-            "a subject for analysis, not automatic proof that it is a "
-            "good investment. Clearly separate source facts, analysis "
-            "and recommendations."
+            "and investment evidence. Clearly separate source facts, "
+            "analysis and recommendations. Do not claim that a sector "
+            "is attractive without supporting evidence."
         ),
         "general": (
-            "Answer the exact Palembang question using only relevant "
-            "retrieved information. State clearly when the available "
-            "sources are insufficient."
+            "Answer the exact Palembang question using only directly "
+            "relevant retrieved evidence. If the sources do not contain "
+            "the requested information, clearly say that the local "
+            "knowledge base does not provide enough evidence."
         ),
     }
 

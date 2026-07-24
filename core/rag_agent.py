@@ -85,8 +85,17 @@ def create_llm() -> ChatGroq:
 
 def determine_primary_source(
     documents: list[RetrievedDocument],
-    preferred_source_ids: tuple[int, ...],
 ) -> int | None:
+    """
+    Use the highest-ranked retrieved document
+    as the primary source shown in the UI.
+    """
+
+    if not documents:
+        return None
+
+    return documents[0].source_id
+
     """
     Select one main source reference for the UI.
     """
@@ -132,7 +141,6 @@ def remove_duplicate_documents(
     return unique_documents
 
 
-
 def is_document_summary_request(
     question: str,
 ) -> bool:
@@ -162,13 +170,18 @@ def retrieve_context(
     selection: AgentSelection,
 ) -> list[RetrievedDocument]:
     """
-    Retrieve focused context for normal questions and broader
-    context for document-summary requests.
+    Retrieve context from all allowed references.
+
+    Normal questions:
+        retrieve globally ranked semantic evidence.
+
+    Document-summary questions:
+        retrieve representative chunks from Reference 4.
     """
 
-    if is_document_summary_request(question) and selection.source_ids:
+    if is_document_summary_request(question):
         documents = retrieve_source_summary_documents(
-            source_id=selection.source_ids[0],
+            source_id=4,
             max_chunks=8,
         )
 
@@ -179,12 +192,12 @@ def retrieve_context(
     documents = retrieve_relevant_documents(
         question=selection.search_query,
         allowed_source_ids=selection.source_ids,
-        top_k=4,
+        top_k=6,
     )
 
     documents = remove_duplicate_documents(documents)
 
-    return documents[:3]
+    return documents[:4]
 
 
 def generate_rag_answer(
@@ -260,7 +273,6 @@ def generate_rag_answer(
 
     primary_source_id = determine_primary_source(
         documents=documents,
-        preferred_source_ids=(selection.source_ids),
     )
 
     unique_source_ids = tuple(

@@ -16,59 +16,58 @@ ECOSYSTEM_SERVICES = {
         "icon": "🏨",
         "title": "Hotels",
         "description": (
-            "Find accommodation for different budgets, " "locations and travel styles."
+            "Explore accommodation as part of Palembang's " "tourism and urban economy."
         ),
         "items": [
             {
-                "name": "The Arista Hotel Palembang",
-                "type": "Business & leisure hotel",
+                "name": "Business Accommodation",
+                "type": "Tourism infrastructure",
                 "icon": "🏨",
                 "description": (
-                    "An accommodation option for visitors "
-                    "seeking business and leisure facilities."
+                    "Explore the role of accommodation services "
+                    "in supporting tourism and business activity."
                 ),
                 "question": (
-                    "Tell me about hotel options for business "
-                    "and leisure travelers in Palembang."
+                    "What role does the accommodation sector play "
+                    "in Palembang's tourism and economy?"
                 ),
             },
             {
-                "name": "Aryaduta Palembang",
-                "type": "City hotel",
+                "name": "City Accommodation",
+                "type": "Urban tourism",
                 "icon": "🛏️",
                 "description": (
-                    "A city accommodation option for visitors "
-                    "who want access to central Palembang."
+                    "Understand how city accommodation supports "
+                    "visitors and urban activity."
                 ),
                 "question": (
-                    "What should a visitor consider when choosing "
-                    "a centrally located hotel in Palembang?"
+                    "How does accommodation support tourism " "activity in Palembang?"
                 ),
             },
             {
-                "name": "The Excelton Hotel",
-                "type": "Urban accommodation",
+                "name": "Tourism Services",
+                "type": "Visitor economy",
                 "icon": "🏢",
                 "description": (
-                    "An urban hotel option for business trips, "
-                    "meetings and city exploration."
+                    "Explore accommodation together with other "
+                    "tourism-related services."
                 ),
                 "question": (
-                    "What hotel facilities are useful for "
-                    "business travelers visiting Palembang?"
+                    "What tourism-related service sectors are "
+                    "documented in Palembang's economic sources?"
                 ),
             },
             {
-                "name": "Wyndham OPI Hotel",
-                "type": "South Palembang accommodation",
+                "name": "South Palembang Development",
+                "type": "Urban development",
                 "icon": "🌆",
                 "description": (
-                    "An accommodation option for travelers "
-                    "visiting the Jakabaring and OPI area."
+                    "Explore documented development and economic "
+                    "activity in Palembang."
                 ),
                 "question": (
-                    "What should visitors know about staying "
-                    "near Jakabaring and the OPI area?"
+                    "What do the local sources say about urban "
+                    "and economic development in Palembang?"
                 ),
             },
         ],
@@ -359,118 +358,116 @@ ECOSYSTEM_SERVICES = {
     },
     "health": {
         "icon": "🏥",
-        "title": "Health Services",
+        "title": "Public Services",
         "description": (
-            "Access general health, pharmacy and " "emergency service information."
+            "Explore documented public infrastructure and " "urban service development."
         ),
         "items": [
             {
-                "name": "Hospitals",
-                "type": "Medical services",
-                "icon": "🏥",
+                "name": "Public Infrastructure",
+                "type": "Urban services",
+                "icon": "🏙️",
                 "description": (
-                    "General information about hospital services "
-                    "that visitors may need."
+                    "Explore infrastructure documented in " "Palembang's local sources."
                 ),
                 "question": (
-                    "What health service information should "
-                    "travelers prepare before visiting Palembang?"
+                    "What public infrastructure developments "
+                    "are documented in Palembang?"
                 ),
             },
             {
-                "name": "Clinics",
-                "type": "General treatment",
-                "icon": "🩺",
+                "name": "Government Services",
+                "type": "Public administration",
+                "icon": "🏛️",
                 "description": (
-                    "Medical service options for general "
-                    "health needs and consultation."
+                    "Explore documented government and public "
+                    "administration activities."
                 ),
                 "question": (
-                    "What should tourists know about accessing "
-                    "general clinics in Palembang?"
+                    "What do the sources describe about government "
+                    "and public services in Palembang?"
                 ),
             },
             {
-                "name": "Pharmacies",
-                "type": "Medicine & supplies",
-                "icon": "💊",
+                "name": "Urban Facilities",
+                "type": "City development",
+                "icon": "🏗️",
                 "description": (
-                    "Places for obtaining common medicine " "and basic health supplies."
+                    "Explore documented facilities connected "
+                    "with Palembang's urban development."
                 ),
                 "question": (
-                    "What basic health preparations are useful "
-                    "for visitors traveling in Palembang?"
+                    "What urban facilities and development projects "
+                    "are mentioned in the Palembang sources?"
                 ),
             },
             {
-                "name": "Emergency Information",
-                "type": "Urgent assistance",
-                "icon": "🚑",
+                "name": "Community Development",
+                "type": "Regional development",
+                "icon": "🤝",
                 "description": (
-                    "General guidance for handling urgent "
-                    "medical or travel situations."
+                    "Explore documented social and regional " "development information."
                 ),
                 "question": (
-                    "What emergency information should "
-                    "visitors keep while traveling in Palembang?"
+                    "What community and regional development "
+                    "information is available for Palembang?"
                 ),
             },
         ],
     },
     "more": {
         "icon": "•••",
-        "title": "More Services",
-        "description": ("Explore additional city and visitor " "support services."),
+        "title": "More Intelligence",
+        "description": (
+            "Explore additional economic, cultural and " "regional information."
+        ),
         "items": [
             {
-                "name": "Banking & ATM",
-                "type": "Financial services",
-                "icon": "🏧",
+                "name": "Banking & Finance",
+                "type": "Economic services",
+                "icon": "🏦",
                 "description": (
-                    "General financial services useful "
-                    "for visitors and business travelers."
+                    "Explore documented banking, financial " "and economic information."
                 ),
                 "question": (
-                    "What financial preparations should "
-                    "travelers make before visiting Palembang?"
+                    "What do the Palembang sources say about "
+                    "banking and financial development?"
                 ),
             },
             {
-                "name": "Prayer Facilities",
-                "type": "Visitor facilities",
-                "icon": "🙏",
+                "name": "Cultural Identity",
+                "type": "Local culture",
+                "icon": "🎭",
                 "description": (
-                    "General information about religious " "and prayer facilities."
+                    "Explore traditions and cultural identity "
+                    "documented in the local sources."
                 ),
                 "question": (
-                    "What should visitors know about finding "
-                    "prayer facilities in Palembang?"
+                    "What cultural traditions help define " "Palembang's identity?"
                 ),
             },
             {
-                "name": "Police & Public Assistance",
-                "type": "Public support",
-                "icon": "👮",
+                "name": "Regional Development",
+                "type": "Economic planning",
+                "icon": "📈",
                 "description": (
-                    "Public assistance information for "
-                    "travel and safety-related needs."
+                    "Explore economic growth and documented " "regional development."
                 ),
                 "question": (
-                    "What safety information is useful "
-                    "for tourists visiting Palembang?"
+                    "What regional development trends are " "documented for Palembang?"
                 ),
             },
             {
-                "name": "Business Support",
-                "type": "Investor services",
+                "name": "Investment Intelligence",
+                "type": "Business analysis",
                 "icon": "📊",
                 "description": (
-                    "General support information for "
-                    "business and investment visitors."
+                    "Explore sectors supported by documented "
+                    "economic and investment evidence."
                 ),
                 "question": (
-                    "What business support information "
-                    "is useful for investors visiting Palembang?"
+                    "Which sectors show documented economic "
+                    "or investment potential in Palembang?"
                 ),
             },
         ],
